@@ -1,0 +1,64 @@
+.home-wrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: white;
+  width: 90%;
+  margin: 9vh auto;
+  height: 82vh;
+
+  .lang-block {
+    box-sizing: border-box;
+    width: 48%;
+    background-color: #040F0F;
+    border: 4px solid #F7EDE2;
+  }
+
+  .nav-block {
+    box-sizing: border-box;
+    width: 52%;
+
+    a {
+      display: flex;
+      color: #040F0F;
+      font-size: 40px;
+      font-weight: 700;
+
+      span {
+        display: block;
+        margin: auto auto 48px 48px;
+      }
+    }
+
+    .projects {
+      font-size: 64px;
+      height: 50%;
+      background-color: #F7EDE2;
+    }
+
+    .other-nav-wrapper {
+      height: 50%;
+      display: flex;
+      align-items: stretch;
+
+      .contacts-and-about-me-wrapper {
+        width: 50%;
+
+        .contacts {
+          height: 50%;
+          background-color: #D57A66;
+        }
+
+        .about-me {
+          height: 50%;
+          background-color: #F7EDE2;
+        }
+      }
+
+      .skills-and-services {
+        width: 50%;
+        height: 100%;
+        background-color: #D57A66;
+      }
+    }
+  }
+}
