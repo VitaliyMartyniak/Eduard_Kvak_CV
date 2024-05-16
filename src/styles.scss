@@ -12,3 +12,29 @@ body {
 a {
   text-decoration: none;
 }
+
+.primary-button {
+  display: flex;
+  align-items: center;
+  background-color: #D57A66;
+  color: #040F0F;
+  padding: 16px 32px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.alt-button {
+  background-color: transparent;
+  color: #F7EDE2;
+  padding: 16px 32px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  border-radius: 24px;
+  border: 4px solid #D57A66;
+  cursor: pointer;
+}
