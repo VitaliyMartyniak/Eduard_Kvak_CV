@@ -3,6 +3,10 @@
   src: url('../src/assets/fonts/Outfit/Outfit-VariableFont_wght.ttf');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #040F0F;
