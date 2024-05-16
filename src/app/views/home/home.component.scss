@@ -7,10 +7,19 @@
   height: 82vh;
 
   .lang-block {
+    padding: 48px;
     box-sizing: border-box;
     width: 48%;
     background-color: #040F0F;
     border: 4px solid #F7EDE2;
+
+    .main-text {
+      font-size: 32px;
+      color: #F7EDE2;
+      font-weight: 700;
+      line-height: 48px;
+      margin-top: 48px;
+    }
   }
 
   .nav-block {
