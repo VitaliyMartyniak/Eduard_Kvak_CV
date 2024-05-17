@@ -16,4 +16,16 @@
     margin-top: 48px;
     margin-bottom: 48px;
   }
+
+  .expandable-item {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+
+    span {
+      font-size: 20px;
+      display: inline-block;
+      margin-left: 16px;
+    }
+  }
 }

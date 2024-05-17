@@ -6,6 +6,18 @@
 
   <h2>Skills & Services</h2>
 
+  <div>
+    <app-expandable-section *ngFor="let data of expandablesDataEn; let i = index"
+                            [title]="data.title"
+                            [showBottomLine]="i !== expandablesDataEn.length - 1"
+    >
+      <div *ngFor="let item of data.items" class="expandable-item">
+        <img src="assets/images/dot.svg" alt="dot">
+        <span>{{item}}</span>
+      </div>
+    </app-expandable-section>
+  </div>
+
 </div>
 
 
