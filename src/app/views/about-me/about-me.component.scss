@@ -109,8 +109,10 @@
         }
 
         span {
+          font-size: 20px;
           display: inline-block;
           margin-left: 16px;
+          line-height: 32px;
         }
       }
     }
@@ -147,6 +149,12 @@
           color: #D57A66;
           line-height: 32px;
           margin: 0 0 24px;
+        }
+
+        span {
+          font-size: 20px;
+          line-height: 32px;
+          font-weight: 500;
         }
       }
     }
