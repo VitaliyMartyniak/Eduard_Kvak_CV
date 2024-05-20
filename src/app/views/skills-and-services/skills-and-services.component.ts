@@ -26,7 +26,7 @@ export class SkillsAndServicesComponent {
     },
     {
       title: 'User interface design',
-      items: ['Best practices', 'Accessibility', 'Design systems', 'Design documentation', 'Light/dark theme', 'White-label', 'Product assets'],
+      items: ['Best practices', 'Accessibility', 'Design systems', 'Design documentation', 'Light/dark theme', 'White-label', 'Product assets', 'Apple CarPlay/Android Auto/AAOS', 'Adaptive/responsive design'],
     },
     {
       title: 'UX leadership',

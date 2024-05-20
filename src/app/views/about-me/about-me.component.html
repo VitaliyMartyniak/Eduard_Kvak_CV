@@ -6,29 +6,27 @@
 
   <h2>About me</h2>
 
-  <p>
-    I've been immersed in the dynamic intersection of product design and technology for over 6 years.
-    My journey began during my studies at Lviv Polytechnic University, where I delved into the realms of
-    tech and design within the Computer Engineering faculty.
-  </p>
+  <div class="main-info">
+    <div class="photo"></div>
 
-  <p>
-    Driven by a combination of research insights and quantitative data, my approach to design is rooted in
-    empathy for users while strategically aligning with business objectives.
-  </p>
+    <div>
+      <p>
+        My name is Eduard. I am 25 years old and have been interested in product design and tech field for over 6 years.
+      </p>
 
-  <p>
-    To continuously evolve my expertise in business and customer experience design, I actively pursue further
-    education through various courses, lectures, and extensive reading across diverse design disciplines,
-    applying these insights directly to my projects.
-  </p>
+      <p>
+        Driven by research and data insights, my approach to design combines user needs with business objectives. To continuously
+        evolve my expertise I actively pursue further education through various courses, lectures, and books applying received knowledge directly to my projects.
+      </p>
 
-  <p>
-    Beyond my individual pursuits, I'm deeply committed to fostering growth within the design community. As a
-    mentor, I guide aspiring designers, sharing knowledge and insights to empower them in their journey.
-    Additionally, I create content and deliver lectures, contributing to our team's collective knowledge base
-    and fostering a culture of collaboration and innovation.
-  </p>
+      <p>
+        I'm passionate about helping others grow in the design field. I mentor aspiring designers and share my knowledge through content creation and lectures.
+      </p>
+
+      <button class="alt-button">Download CV</button>
+    </div>
+
+  </div>
 
   <h4>Experience</h4>
 
@@ -110,34 +108,14 @@
 
   <h4>What other says about me</h4>
 
-  <div class="feedbacks-block">
-    <div class="feedbacks-row">
-      <div class="feedback-item">
-        <h5>Amanda Hilliard</h5>
-        <h6>VP Product at Car IQ</h6>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-
-      <div class="feedback-item">
-        <h5>Amanda Hilliard</h5>
-        <h6>VP Product at Car IQ</h6>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-    </div>
-
-    <div class="feedbacks-row">
-      <div class="feedback-item">
-        <h5>Amanda Hilliard</h5>
-        <h6>VP Product at Car IQ</h6>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-
-      <div class="feedback-item">
-        <h5>Amanda Hilliard</h5>
-        <h6>VP Product at Car IQ</h6>
-        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-      </div>
-    </div>
+  <div>
+    <app-about-me-expandable-section
+      *ngFor="let data of expandablesDataEn"
+      [name]="data.name"
+      [position]="data.position"
+      [text]="data.text"
+    >
+    </app-about-me-expandable-section>
   </div>
 
 </div>
