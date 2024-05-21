@@ -1,1 +1,18 @@
-<p>projects works!</p>
+<div class="projects-wrapper">
+  <button class="primary-button" routerLink="/home">
+    <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
+    <span>Back</span>
+  </button>
+
+  <h2>Projects</h2>
+
+  <div class="projects">
+    <div class="project" *ngFor="let project of projects">
+      {{project.title}}
+    </div>
+  </div>
+
+</div>
+
+
+
