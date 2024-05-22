@@ -7,8 +7,21 @@
   <h2>Projects</h2>
 
   <div class="projects">
-    <div class="project" *ngFor="let project of projects">
-      {{project.title}}
+    <div class="project" *ngFor="let project of projects" (click)="navigateToProject(project.name)">
+      <div class="project-photo"
+           [ngStyle]="{'background-image': getBackgroundImageUrl(project.name)}"
+      ></div>
+      <div class="project-info">
+        <h3>
+          {{project.title}}
+        </h3>
+
+        <div class="hashes">
+          <div class="hash" *ngFor="let hash of project.hashes">
+            #{{hash}}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
