@@ -48,6 +48,6 @@ export class ProjectsComponent {
   }
 
   navigateToProject(name: string) {
-    this.router.navigate([`/${name}`]);
+    this.router.navigate([`projects/${name}`]);
   }
 }
