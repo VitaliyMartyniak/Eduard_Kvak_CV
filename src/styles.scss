@@ -140,6 +140,12 @@ button {
     }
   }
 
+  .scope {
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
   .two-column-block {
     display: flex;
     justify-content: space-between;
@@ -150,7 +156,7 @@ button {
       .block-item {
         display: flex;
         align-items: flex-start;
-        margin-bottom: 24px;
+        margin-bottom: 16px;
 
         &:last-child {
           margin-bottom: 0;
@@ -171,7 +177,7 @@ button {
     .block-item {
       display: flex;
       align-items: flex-start;
-      margin-bottom: 24px;
+      margin-bottom: 16px;
 
       &:last-child {
         margin-bottom: 0;
@@ -189,6 +195,10 @@ button {
   .challenges {
     margin-top: 48px;
     margin-bottom: 96px;
+
+    h5 {
+      margin-bottom: 24px;
+    }
   }
 
   .working-process {
@@ -202,9 +212,8 @@ button {
       width: 100%;
       height: 372px;
       border-radius: 56px;
-      background-image: url("/assets/images/car-iq-pay-working-scheme.png");
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-color: rgba(256,256,256, 0.08);
       margin-bottom: 48px;
@@ -214,12 +223,15 @@ button {
 
       span {
         display: inline-block;
-        margin-top: 16px;
         font-size: 20px;
         line-height: 32px;
 
-        &.text-bottom-margin {
+        &:not(:last-child).text-bottom-margin {
           margin-bottom: 32px;
+        }
+
+        &:first-child {
+          margin-top: 16px;
         }
       }
     }

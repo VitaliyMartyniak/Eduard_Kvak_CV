@@ -1,0 +1,169 @@
+<div class="project-wrapper">
+  <div class="content-wrapper">
+    <button class="primary-button" (click)="goBack()">
+      <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
+      <span>Back</span>
+    </button>
+
+    <h2>AlifBee Kids</h2>
+
+    <p>
+      AlifBee Kids it’s a platform that helps kids to learn Arabic language in a game way.
+    </p>
+
+    <div class="industries">
+      <h6>Industries</h6>
+
+      <div class="hashes">
+        <div class="hash" *ngFor="let hash of hashes">
+          #{{hash}}
+        </div>
+      </div>
+    </div>
+
+    <div class="location">
+      <h6>Location</h6>
+
+      <p>Quebec, Canada</p>
+    </div>
+
+    <div class="company-profiles">
+      <h6>Company profiles</h6>
+
+      <div class="navigation">
+        <a class="alt-button" href="https://www.crunchbase.com/organization/alifbee" target="_blank">Crunchbase</a>
+        <a class="alt-button" href="https://www.linkedin.com/company/alifbee/" target="_blank">Linkedin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/alifbee-1st-screen.png" alt="Car IQ Pay 1st screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="scope">
+      <h5>Scope</h5>
+
+      <p>The main goal was to redesign the registration flow, addressing the high dropout rate among users. My responsibilities included:</p>
+
+      <div class="one-column-block">
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Conducting user research to identify pain points and user needs.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Performing a thorough competitor analysis.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Designing a new registration flow aligned with the company’s branding and style guidelines.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="challenges">
+      <h5>Challenges</h5>
+
+      <div class="one-column-block">
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Multiple language support.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Reducing the number of steps required for registration.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/alifbee-2nd-screen.png" alt="Car IQ Pay 2nd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="working-process">
+      <h5>Working process</h5>
+
+      <p>Explore the various stages below to gain insight into our approach and methodologies.</p>
+
+      <div class="working-process-image"></div>
+
+      <div class="working-process-list">
+        <app-expandable-section title="Research"
+        >
+          <span>
+            Given the tight schedule, we focused our research on quickly gathering critical insights. We utilized analytics
+            to pinpoint user pain points and identify areas where users were dropping off during the registration process.
+            This data-driven approach allowed us to understand user behavior and preferences efficiently. Additionally, we
+            conducted a thorough competitor analysis to understand industry standards and identify opportunities for improvement.
+            These insights informed our design strategy and guided the development of a more user-friendly registration flow.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Ideate"
+        >
+          <span>
+            During ideation, we held intensive brainstorming sessions to generate a variety of ideas and potential solutions.
+            We collaborated closely with stakeholders to create and refine wireframes, exploring different design directions.
+            We prioritized ideas based on feasibility, user impact, and alignment with project goals.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Design"
+        >
+          <span>
+            In the design phase, we translated our top ideas into high-fidelity designs. We focused on creating a seamless and
+            user-friendly registration flow, ensuring all elements were consistent with the company’s visual identity.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Deliver"
+                                [showBottomLine]="false"
+        >
+          <span>
+            Upon completion, we prepared comprehensive design documentation and resources for the development team, ensuring a
+            smooth handover and facilitating efficient implementation of the new registration flow.
+          </span>
+        </app-expandable-section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/alifbee-3rd-screen.png" alt="Car IQ Pay 3rd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="result">
+      <h5>Result</h5>
+
+      <div class="result-items">
+        <div class="result-item">
+          <p>Enhanced registration flow</p>
+          <span>The new, streamlined registration process addressed the identified pain points,
+            making it more intuitive and user-friendly.</span>
+        </div>
+        <div class="result-item">
+          <p>Social network integration</p>
+          <span>We successfully added the ability for users to sign in via social networks,
+            offering greater convenience and flexibility.</span>
+        </div>
+        <div class="result-item">
+          <p>Reduced drop-off rate</p>
+          <span>As a result of these improvements, the user drop-off rate during registration was reduced to less than 10%.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-me">
+      <div>
+        <p>Want to know more about this project?</p>
+        <span>Please feel free to reach out to me for more details. I would be happy to provide additional information!</span>
+      </div>
+
+      <a [routerLink]="'/contacts'">Contact me</a>
+    </div>
+  </div>
+
+</div>
+

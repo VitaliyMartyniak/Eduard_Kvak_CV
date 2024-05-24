@@ -1,0 +1,185 @@
+<div class="project-wrapper">
+  <div class="content-wrapper">
+    <button class="primary-button" (click)="goBack()">
+      <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
+      <span>Back</span>
+    </button>
+
+    <h2>Intelas</h2>
+
+    <p>
+      Intelas is the industry leader in financial data standardization. The company collects and
+      standardizes property-level data for real estate asset managers and accountants.
+    </p>
+
+    <div class="industries">
+      <h6>Industries</h6>
+
+      <div class="hashes">
+        <div class="hash" *ngFor="let hash of hashes">
+          #{{hash}}
+        </div>
+      </div>
+    </div>
+
+    <div class="location">
+      <h6>Location</h6>
+
+      <p>New York, NY, US</p>
+    </div>
+
+    <div class="company-profiles">
+      <h6>Company profiles</h6>
+
+      <div class="navigation">
+        <a class="alt-button" href="https://www.crunchbase.com/organization/intelas" target="_blank">Crunchbase</a>
+        <a class="alt-button" href="https://www.linkedin.com/company/intelas/about/" target="_blank">Linkedin</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/intelas-1st-screen.png" alt="Car IQ Pay 1st screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="scope">
+      <h5>Scope</h5>
+
+      <p>The primary objective was to create an MVP solution for managers to collect, standardize, and manage
+        real estate data. This solution aimed to demonstrate capabilities and attract investment for further
+        product development. My responsibilities::</p>
+
+      <div class="one-column-block">
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Conducting user research to gain insights into user needs, behaviors, and preferences.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Performing competitor analysis to identify industry standards and opportunities.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Developing product architecture to ensure scalability and efficiency.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Creating detailed designs and prototypes.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="challenges">
+      <h5>Challenges</h5>
+
+      <div class="one-column-block">
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Developing intuitive table and report builders.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Designing tables with complex nesting levels.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Implementing advanced filtering and sorting mechanisms.</span>
+        </div>
+        <div class="block-item">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>Providing comprehensive descriptions for data calculations.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/intelas-2nd-screen.png" alt="Car IQ Pay 2nd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="working-process">
+      <h5>Working process</h5>
+
+      <p>Explore the various stages below to gain insight into our approach and methodologies.</p>
+
+      <div class="working-process-image"></div>
+
+      <div class="working-process-list">
+        <app-expandable-section title="Research"
+        >
+          <span>
+            We started by conducting in-depth user interviews and surveys to uncover critical insights into user needs,
+            behaviors, and pain points. We performed a thorough competitor analysis to spot market trends and gaps.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Ideate"
+        >
+          <span>
+            In the ideation phase, creativity and collaboration took center stage. We hosted dynamic brainstorming
+            sessions and workshops with key stakeholders to generate a broad spectrum of ideas and solutions. We
+            sketched and created high-fidelity wireframes to explore various design decisions. We then prioritized
+            ideas based on their feasibility, potential impact, and alignment with the project's objectives.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Design"
+        >
+          <span>
+            In the design phase, we turned our top ideas into detailed and polished designs. We created a UI Kit to ensure
+            the design was consistent and efficient across the project.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Prototype"
+                                [showBottomLine]="false"
+        >
+          <span>
+            During the prototyping phase, we brought our designs to life. We developed an interactive, functional prototype
+            that not only simulated the user experience but also highlighted key functionalities. This allowed stakeholders
+            to engage with a tangible representation of the final product, providing invaluable feedback for further refinement.
+          </span>
+        </app-expandable-section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/intelas-3rd-screen.png" alt="Car IQ Pay 3rd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="result">
+      <h5>Result</h5>
+
+      <div class="result-items">
+        <div class="result-item">
+          <p>Streamlined data management</p>
+          <span>The platform successfully standardized and centralized real estate data, making it
+            easier for managers to collect and work with the information.</span>
+        </div>
+        <div class="result-item">
+          <p>Advanced features implementation</p>
+          <span>Clear and easy to read table, ability so swap columns with rows, add/remove/pin
+            table columns, report builders, advanced filtering and sorting capabilities, and more.</span>
+        </div>
+        <div class="result-item">
+          <p>Effective prototyping</p>
+          <span>The functional prototype effectively demonstrated the product's capabilities, garnering
+            positive feedback from investors. That helped stakeholders secure additional funding for
+            further development and scaling of the product.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-me">
+      <div>
+        <p>Want to know more about this project?</p>
+        <span>Please feel free to reach out to me for more details. I would be happy to provide additional information!</span>
+      </div>
+
+      <a [routerLink]="'/contacts'">Contact me</a>
+    </div>
+  </div>
+
+</div>
+
