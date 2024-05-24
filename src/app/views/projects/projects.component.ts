@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ExpandableSectionComponent} from "../skills-and-services/components/expandable-section/expandable-section.component";
-import {NgForOf, NgStyle} from "@angular/common";
+import {Location, NgForOf, NgStyle} from "@angular/common";
 import {Router, RouterLink} from "@angular/router";
 
 @Component({
@@ -17,7 +17,7 @@ import {Router, RouterLink} from "@angular/router";
 })
 export class ProjectsComponent {
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private location: Location) {
   }
 
   projects = [
@@ -49,5 +49,9 @@ export class ProjectsComponent {
 
   navigateToProject(name: string) {
     this.router.navigate([`projects/${name}`]);
+  }
+
+  goBack() {
+    this.location.back()
   }
 }

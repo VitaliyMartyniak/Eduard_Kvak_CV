@@ -1,6 +1,6 @@
 <div class="project-wrapper">
   <div class="content-wrapper">
-    <button class="primary-button" routerLink="/home">
+    <button class="primary-button" (click)="goBack()">
       <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
       <span>Back</span>
     </button>
@@ -40,8 +40,8 @@
       <h6>Company profiles</h6>
 
       <div class="navigation">
-        <a class="alt-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=edik.kvak@gmail.com" target="_blank">Crunchbase</a>
-        <a class="alt-button" href="https://www.linkedin.com/in/eduard-kvak-98a779133/" target="_blank">Linkedin</a>
+        <a class="alt-button" href="https://www.crunchbase.com/organization/cariq-2" target="_blank">Crunchbase</a>
+        <a class="alt-button" href="https://www.linkedin.com/company/car-iq/" target="_blank">Linkedin</a>
       </div>
     </div>
   </div>
@@ -123,6 +123,146 @@
 
   <div class="full-width-wrapper">
     <img src="../../../../../assets/images/car-iq-pay-2nd-screen.png" alt="Car IQ Pay 2nd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="working-process">
+      <h5>Working process</h5>
+
+      <p>Explore the various stages below to gain insight into our approach and methodologies.</p>
+
+      <div class="working-process-image"></div>
+
+      <div class="working-process-list">
+        <app-expandable-section title="Plan"
+        >
+          <span>
+            We usually start each new sprint by conducting thorough analysis of the data and feedback gathered
+          from the previous sprint. Next, we facilitate a brainstorming session to ideate and define new
+          features and enhancements that contribute to product objectives. Following the brainstorming
+          session, we proceed to create and assign tasks based on the prioritization of features.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Design"
+        >
+          <span class="text-bottom-margin">
+            After receiving the tasks, my first step is to create wireframes to visualize and validate new features.
+            This iterative process involves multiple rounds of refinement to ensure optimal usability and functionality.
+          </span>
+          <span class="text-bottom-margin">
+            Once the wireframes are finalized and approved, I proceed to develop the final designs and components.
+            This includes creating high-fidelity mockups, prototypes, etc. Additionally, I prepare all necessary design
+            documentation and guidelines for developers.
+          </span>
+          <span class="text-bottom-margin">
+            To accommodate potential iterations and unforeseen challenges, we allocate approximately half of the sprint
+            for the design phase. This allows for additional time for analysis or adjustments as needed.
+          </span>
+          <span class="text-bottom-margin">
+            Finally, I conduct a collaborative working session with developers to ensure alignment and clarity on the
+            implementation of design elements. This includes sharing design assets, specifications, and any additional
+            context or requirements for the current sprint.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Develop"
+        >
+          <span class="text-bottom-margin">
+            Once developers receive all necessary design assets and documentation, they commence their work on implementing
+            the features and functionalities outlined in the sprint tasks. Throughout the development process, developers
+            collaborate closely with me to address any issues or changes that may arise.
+          </span>
+          <span class="text-bottom-margin">
+            This allows for timely adjustments to be made to the design as needed, ensuring that the final product
+            meets the intended requirements and objectives.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Test"
+        >
+          <span class="text-bottom-margin">
+            After developers complete their work, they deploy a new build to the mock environment. I then proceed
+            to conduct thorough testing of the new build to identify any inconsistencies or issues.
+          </span>
+          <span class="text-bottom-margin">
+            During testing, I focus not only on functional aspects but also on aspects related to design integrity,
+            such as animations and interaction with components. This comprehensive approach helps to uncover any
+            potential weaknesses in the design.
+          </span>
+          <span class="text-bottom-margin">
+            If any discrepancies or bugs are discovered during testing, I create detailed bug tickets outlining the
+            issue and its impact. These tickets are then addressed by developers to ensure timely resolution and
+            maintain the quality of the final product.
+          </span>
+        </app-expandable-section>
+        <app-expandable-section title="Launch"
+                                [showBottomLine]="false"
+        >
+          <span class="text-bottom-margin">
+            After addressing all identified bugs and ensuring the stability of the application, developers
+            proceed to release a new build in the production environment, making it available to users.
+          </span>
+          <span class="text-bottom-margin">
+            To gather insights and monitor user interactions post-launch, we leverage tools such as Pendo
+            to create new anchors and track potential pain points in the user journey. Additionally, we
+            conduct A/B testing to validate hypotheses and optimize the user experience based on data-driven insights.
+          </span>
+          <span class="text-bottom-margin">
+            In some cases, we supplement quantitative data with qualitative feedback by conducting user interviews
+            or usability testing sessions. This allows us to gain deeper insights into user behavior and
+            preferences, informing future iterations and improvements.
+          </span>
+        </app-expandable-section>
+      </div>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper">
+    <img src="../../../../../assets/images/car-iq-pay-3rd-screen.png" alt="Car IQ Pay 3rd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="result">
+      <h5>Result</h5>
+
+      <div class="result-items">
+        <div class="result-item">
+          <p>Market leaders</p>
+          <span>By eliminating the need for physical cards, users can now seamlessly pay for services via
+            direct payment or Apple Pay/Google Pay.</span>
+        </div>
+        <div class="result-item">
+          <p>Customer satisfaction</p>
+          <span>The customer satisfaction rate is 90%, with revenue exceeding $1 million.</span>
+        </div>
+        <div class="result-item">
+          <p>Innovative integration</p>
+          <span>The mobile application will be the world's first to enable purchases through Apple
+            CarPlay and Android Auto.</span>
+        </div>
+        <div class="result-item">
+          <p>Accessibility</p>
+          <span>Both products adheres to the AA level of WCAG requirements, ensuring accessibility
+            for users with disabilities.</span>
+        </div>
+        <div class="result-item">
+          <p>Scalability</p>
+          <span>White-label products, multiple services, unique features, and more.</span>
+        </div>
+        <div class="result-item">
+          <p>Design system</p>
+          <span>Clear design and collaboration principles, guidelines for newcomer designers, variables
+            and tokens, and up-to-date Figma features.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-me">
+      <div>
+        <p>Want to know more about this project?</p>
+        <span>Please feel free to reach out to me for more details. I would be happy to provide additional information!</span>
+      </div>
+
+      <a [routerLink]="'/contacts'">Contact me</a>
+    </div>
   </div>
 
 </div>

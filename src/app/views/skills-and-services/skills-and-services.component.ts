@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {ExpandableSectionComponent} from "./components/expandable-section/expandable-section.component";
-import {NgForOf} from "@angular/common";
+import {Location, NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-skills-and-services',
@@ -15,6 +15,10 @@ import {NgForOf} from "@angular/common";
   styleUrl: './skills-and-services.component.scss'
 })
 export class SkillsAndServicesComponent {
+
+  constructor(private location: Location) {
+  }
+
   expandablesDataEn = [
     {
       title: 'Design strategy',
@@ -49,4 +53,8 @@ export class SkillsAndServicesComponent {
       items: ['Communication', 'Collaboration', 'Critical thinking'],
     },
   ]
+
+  goBack() {
+    this.location.back()
+  }
 }

@@ -3,6 +3,7 @@ import {RouterLink} from "@angular/router";
 import {AboutMeExpandableSectionComponent} from "./components/about-me-expandable-section/about-me-expandable-section.component";
 import {ExpandableSectionComponent} from "../skills-and-services/components/expandable-section/expandable-section.component";
 import {NgForOf} from "@angular/common";
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-about-me',
@@ -17,6 +18,10 @@ import {NgForOf} from "@angular/common";
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+
+  constructor(private location: Location) {
+  }
+
   expandablesDataEn = [
     {
       name: 'Roman Kaminechny',
@@ -26,4 +31,8 @@ export class AboutMeComponent {
         'the final product. His design solutions were not only visually appealing but also user-friendly.'
     },
   ]
+
+  goBack() {
+    this.location.back()
+  }
 }
