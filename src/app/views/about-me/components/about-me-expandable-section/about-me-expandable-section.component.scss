@@ -60,4 +60,8 @@
       display: block;
     }
   }
+
+  &:hover {
+    border-radius: 0;
+  }
 }
