@@ -13,25 +13,32 @@
     background-color: #040F0F;
     border: 4px solid #F7EDE2;
 
-    .main-text {
+    .main-text-wrapper{
       font-size: 32px;
       color: #F7EDE2;
       font-weight: 700;
       line-height: 48px;
       margin-top: 48px;
-      display: inline-block;
       overflow: hidden;
-      //white-space: nowrap;
 
-      span {
-        opacity: 0;
-        animation: typing-animation 0.5s forwards;
+      main-text {
+        display: inline-block;
       }
-    }
 
-    @keyframes typing-animation {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      .cursor {
+        display: inline-block;
+        width: 0.15em;
+        height: 1em;
+        transform: translateY(3px);
+        background-color: #F7EDE2;
+        animation: blink 0.8s infinite; /* Adjust the blinking speed as needed */
+      }
+
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
     }
   }
 

@@ -26,19 +26,27 @@ import {NgForOf} from "@angular/common";
     ]),
   ],
 })
-export class HomeComponent implements OnInit, AfterViewInit{
+export class HomeComponent implements AfterViewInit{
   borderState = 'cornered'
-  mainText = 'Hi, I\'m Ed, a seasoned product designer with over 6 years of experience. I craft innovative digital experiences that blend user needs with business goals. Let\'s collaborate to turn your vision into reality.';
-  textArray: string[] = [];
+  mainText = 'Hi, I\'m Ed, a seasoned product designer with over 6 years of experience. I craft innovative digital experiences that blend user needs with business goals. Let\'s collaborate to turn your vision into reality!';
+  typedText: string = '';
+  textIndex: number = 0;
 
   constructor() {
   }
 
-  ngOnInit() {
-    this.textArray = this.mainText.split('');
-  }
-
   ngAfterViewInit() {
     this.borderState = 'rounded';
+    this.typeWriter();
+  }
+
+  typeWriter() {
+    if (this.textIndex < this.mainText.length) {
+      this.typedText += this.mainText.charAt(this.textIndex);
+      this.textIndex++;
+      setTimeout(() => {
+        this.typeWriter();
+      }, 20);
+    }
   }
 }

@@ -1,8 +1,9 @@
 <div class="home-wrapper">
   <div [@borderRadiusAnimation]="borderState" class="lang-block">
     <img src="assets/images/State=Assembled.svg" alt="icon">
-    <div class="main-text">
-      <span *ngFor="let char of textArray; let i = index" [style.animation-delay]="i * 0.04 + 's'">{{char}}</span>
+    <div class="main-text-wrapper">
+      <span class="main-text" [innerHTML]="typedText"></span>
+      <span class="cursor"></span>
     </div>
   </div>
   <div class="nav-block">
