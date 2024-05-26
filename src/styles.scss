@@ -15,10 +15,18 @@ body {
 
 a {
   text-decoration: none;
+
+  &:hover {
+    border-radius: 0;
+  }
 }
 
 button {
   font-family: 'Outfit', sans-serif;
+
+  &:hover {
+    border-radius: 0;
+  }
 }
 
 .primary-button {
@@ -303,6 +311,10 @@ button {
       border-radius: 24px;
       border: none;
       cursor: pointer;
+
+      &:hover {
+        border-radius: 0;
+      }
     }
   }
 }
