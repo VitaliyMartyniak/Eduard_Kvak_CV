@@ -30,6 +30,14 @@
       margin-bottom: 48px;
       cursor: pointer;
 
+      &:hover {
+        border-radius: 0;
+
+        .project-photo {
+          border-radius: 0;
+        }
+      }
+
       &:nth-child(odd) {
         margin-right: 48px;
       }

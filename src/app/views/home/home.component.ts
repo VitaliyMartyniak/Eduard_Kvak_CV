@@ -21,7 +21,7 @@ import {NgForOf} from "@angular/common";
         borderRadius: '56px'
       })),
       transition('cornered <=> rounded', [
-        animate('1s ease-out')
+        animate('0.5s ease-out')
       ]),
     ]),
   ],
@@ -36,8 +36,10 @@ export class HomeComponent implements AfterViewInit{
   }
 
   ngAfterViewInit() {
-    this.borderState = 'rounded';
     this.typeWriter();
+    setTimeout(() => {
+      this.borderState = 'rounded';
+    }, 1000)
   }
 
   typeWriter() {
@@ -46,7 +48,7 @@ export class HomeComponent implements AfterViewInit{
       this.textIndex++;
       setTimeout(() => {
         this.typeWriter();
-      }, 20);
+      }, 10);
     }
   }
 }
