@@ -1,10 +1,10 @@
 .home-wrapper {
   display: flex;
   align-items: stretch;
-  background-color: white;
   width: 90%;
   margin: 9vh auto;
   height: 82vh;
+  background-color: #040F0F;
 
   .lang-block {
     padding: 48px;
@@ -19,6 +19,19 @@
       font-weight: 700;
       line-height: 48px;
       margin-top: 48px;
+      display: inline-block;
+      overflow: hidden;
+      //white-space: nowrap;
+
+      span {
+        opacity: 0;
+        animation: typing-animation 0.5s forwards;
+      }
+    }
+
+    @keyframes typing-animation {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   }
 
@@ -31,6 +44,10 @@
       color: #040F0F;
       font-size: 40px;
       font-weight: 700;
+
+      &:hover {
+        border-radius: 0 !important;
+      }
 
       span {
         display: block;

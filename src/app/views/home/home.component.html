@@ -1,25 +1,24 @@
 <div class="home-wrapper">
-<!--  <div [@borderRadiusAnimation]="borderState" class="lang-block">-->
-  <div class="lang-block">
+  <div [@borderRadiusAnimation]="borderState" class="lang-block">
     <img src="assets/images/State=Assembled.svg" alt="icon">
     <div class="main-text">
-      Hi, I'm Ed, a seasoned product designer with over 6 years of experience. I craft innovative digital experiences that blend user needs with business goals. Let's collaborate to turn your vision into reality.
+      <span *ngFor="let char of textArray; let i = index" [style.animation-delay]="i * 0.04 + 's'">{{char}}</span>
     </div>
   </div>
   <div class="nav-block">
-    <a routerLink="/projects" class="projects">
+    <a [@borderRadiusAnimation]="borderState" routerLink="/projects" class="projects">
       <span>Projects</span>
     </a>
     <div class="other-nav-wrapper">
       <div class="contacts-and-about-me-wrapper">
-        <a routerLink="/contacts" class="contacts">
+        <a [@borderRadiusAnimation]="borderState" routerLink="/contacts" class="contacts">
           <span>Contacts</span>
         </a>
-        <a routerLink="/about-me" class="about-me">
+        <a [@borderRadiusAnimation]="borderState" routerLink="/about-me" class="about-me">
           <span>About Me</span>
         </a>
       </div>
-      <a routerLink="/skills-and-services" class="skills-and-services">
+      <a [@borderRadiusAnimation]="borderState" routerLink="/skills-and-services" class="skills-and-services">
         <span>Skills &<br/>Services</span>
       </a>
     </div>
