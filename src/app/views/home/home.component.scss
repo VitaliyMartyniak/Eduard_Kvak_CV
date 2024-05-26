@@ -48,12 +48,29 @@
 
     a {
       display: flex;
+      flex-direction: column;
       color: #040F0F;
       font-size: 40px;
       font-weight: 700;
 
+      .square {
+        display: none;
+        width: 16px;
+        height: 16px;
+        margin-top: auto;
+        margin-left: 48px;
+      }
+
       &:hover {
         border-radius: 0 !important;
+
+        span {
+          margin-top: 24px;
+        }
+
+        .square {
+          display: block;
+        }
       }
 
       span {
@@ -66,6 +83,10 @@
       font-size: 64px;
       height: 50%;
       background-color: #F7EDE2;
+
+      .square {
+        background-color: #D57A66;
+      }
     }
 
     .other-nav-wrapper {
@@ -79,11 +100,19 @@
         .contacts {
           height: 50%;
           background-color: #D57A66;
+
+          .square {
+            background-color: #F7EDE2;
+          }
         }
 
         .about-me {
           height: 50%;
           background-color: #F7EDE2;
+
+          .square {
+            background-color: #D57A66;
+          }
         }
       }
 
@@ -91,6 +120,10 @@
         width: 50%;
         height: 100%;
         background-color: #D57A66;
+
+        .square {
+          background-color: #F7EDE2;
+        }
       }
     }
   }
