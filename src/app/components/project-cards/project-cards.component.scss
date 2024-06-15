@@ -1,0 +1,80 @@
+.projects {
+
+  .project {
+    display: flex;
+    border-bottom: 2px solid #F7EDE2;
+    padding-bottom: 48px;
+    margin-bottom: 48px;
+
+    &:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .description {
+      width: 47%;
+      margin-right: 56px;
+
+      h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+
+      .subtitle {
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-bottom: 24px;
+      }
+
+      .details {
+        margin-bottom: 16px;
+
+        p {
+          margin: 0 0 4px;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 32px;
+          color: #D57A66;
+        }
+
+        span {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 32px;
+        }
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 32px;
+        color: #D57A66;
+
+        .view-project-icon {
+          display: inline-block;
+          width: 32px;
+          height: 32px;
+          background: url("/assets/images/view-project-arrow.svg") center no-repeat;
+          background-size: contain;
+          transform: translateX(8px);
+        }
+      }
+    }
+
+    .photo {
+      width: 53%;
+      min-height: 460px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+}

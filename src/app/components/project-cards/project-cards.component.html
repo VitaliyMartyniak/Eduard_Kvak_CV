@@ -1,0 +1,21 @@
+<div class="projects">
+  <div *ngFor="let project of projects" class="project">
+    <div class="description">
+      <h3>{{project.title}}</h3>
+      <span class="subtitle">
+        {{project.subtitle}}
+      </span>
+
+      <div *ngFor="let details of project.details" class="details">
+        <p>{{details.title}}</p>
+        <span>{{details.data}}</span>
+      </div>
+
+      <a routerLink="/projects/{{project.name}}">View Project <div class="view-project-icon"></div></a>
+    </div>
+
+    <div class="photo"
+         [ngStyle]="{'background-image': getBackgroundImageUrl(project.name)}"
+    ></div>
+  </div>
+</div>
