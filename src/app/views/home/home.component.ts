@@ -5,6 +5,7 @@ import {NgForOf} from "@angular/common";
 import {NavigationComponent} from "../../components/navigation/navigation.component";
 import {ProjectCardsComponent} from "../../components/project-cards/project-cards.component";
 import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
+import {SimpleCardsComponent} from "../../components/simple-cards/simple-cards.component";
 
 @Component({
   selector: 'app-home',
@@ -15,6 +16,7 @@ import {FooterNavigationComponent} from "../../components/footer-navigation/foot
     NavigationComponent,
     ProjectCardsComponent,
     FooterNavigationComponent,
+    SimpleCardsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
@@ -46,28 +48,28 @@ export class HomeComponent implements AfterViewInit{
     },
     {
       icon: 'bubbles',
-      title: 'Design strategy',
-      text: 'Developing comprehensive design strategies that align with business goals and user needs, ensuring a seamless and impactful user experience.'
+      title: 'Data analytics',
+      text: 'Utilizing data analytics to inform design decisions, optimize user experiences, and measure the effectiveness of design solutions to drive continuous improvement.'
     },
     {
       icon: 'trophy',
-      title: 'Design strategy',
-      text: 'Developing comprehensive design strategies that align with business goals and user needs, ensuring a seamless and impactful user experience.'
+      title: 'UX leadership',
+      text: 'Leading and mentoring design teams, fostering a collaborative environment, and driving innovative UX practices across projects.'
     },
     {
       icon: 'table',
-      title: 'Design strategy',
-      text: 'Developing comprehensive design strategies that align with business goals and user needs, ensuring a seamless and impactful user experience.'
+      title: 'User interfaces',
+      text: 'Crafting intuitive and visually appealing user interfaces that enhance usability and delight users across digital platforms, ensuring consistency and accessibility.'
     },
     {
       icon: 'window',
-      title: 'Design strategy',
-      text: 'Developing comprehensive design strategies that align with business goals and user needs, ensuring a seamless and impactful user experience.'
+      title: 'Interaction design',
+      text: 'Designing interactive elements that improve user engagement, ensuring a smooth and intuitive user journey.'
     },
     {
       icon: 'palette',
-      title: 'Design strategy',
-      text: 'Developing comprehensive design strategies that align with business goals and user needs, ensuring a seamless and impactful user experience.'
+      title: 'Design documentation',
+      text: 'Creating detailed design documentation to communicate design decisions, guidelines, and processes clearly and effectively.'
     }
   ]
 

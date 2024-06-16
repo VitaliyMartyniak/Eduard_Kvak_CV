@@ -26,13 +26,7 @@
     <div class="what-i-can-do-block">
       <h2>What I can do for you</h2>
 
-      <div class="cards">
-        <div *ngFor="let card of cards" class="card">
-          <div class="icon {{card.icon}}"></div>
-          <h4 class="title">{{card.title}}</h4>
-          <p class="text">{{card.text}}</p>
-        </div>
-      </div>
+      <app-simple-cards [cards]="cards"></app-simple-cards>
     </div>
   </div>
 </div>

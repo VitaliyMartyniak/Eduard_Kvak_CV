@@ -1,126 +1,210 @@
 <div class="about-me-wrapper">
-  <button class="primary-button" (click)="goBack()">
-    <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
-    <span>Back</span>
-  </button>
+  <div class="content-wrapper">
+    <app-navigation></app-navigation>
 
-  <h2>About me</h2>
+    <div class="main-info">
+      <div>
+        <h2>
+          About me
+        </h2>
 
-  <div class="main-info">
-    <div class="photo"></div>
+        <p>
+          My name is Eduard. With over 6 years of experience in product design and the tech industry, I excel in crafting solutions
+          that harmonize user needs with business goals.
+        </p>
 
-    <div>
-      <p>
-        My name is Eduard. With over 6 years of experience in product design and the tech industry, I excel in crafting solutions
-        that harmonize user needs with business goals.
-      </p>
+        <p>
+          My design approach is driven by thorough research and data insights, ensuring that every project combines user needs with business
+          objectives. To continuously evolve my expertise I actively pursue further education through various courses, lectures, and
+          books applying received knowledge directly to my projects.
+        </p>
 
-      <p>
-        My design approach is driven by thorough research and data insights, ensuring that every project combines user needs with business
-        objectives. To continuously evolve my expertise I actively pursue further education through various courses, lectures, and
-        books applying received knowledge directly to my projects.
-      </p>
+        <p>
+          Beyond my design work, I am passionate about fostering growth in the design community. I mentor aspiring designers, sharing
+          my expertise through content creation and lectures, helping others to advance their skills and careers in the design field.
+        </p>
 
-      <p>
-        Beyond my design work, I am passionate about fostering growth in the design community. I mentor aspiring designers, sharing
-        my expertise through content creation and lectures, helping others to advance their skills and careers in the design field.
-      </p>
+        <button class="primary-button" (click)="downloadPdf()">Download CV</button>
+      </div>
 
-      <button class="alt-button" (click)="downloadPdf()">Download CV</button>
+      <div class="photo"></div>
+
+    </div>
+  </div>
+</div>
+
+<div class="about-me-wrapper lighten">
+  <div class="content-wrapper">
+
+    <div class="personal-statistic">
+      <div class="statistic-item">
+        <h4>Years of experiece</h4>
+        <h2>6+</h2>
+      </div>
+      <div class="statistic-item">
+        <h4>Projects complete</h4>
+        <h2>25+</h2>
+      </div>
+      <div class="statistic-item">
+        <h4>Industries served</h4>
+        <h2>8+</h2>
+      </div>
+      <div class="statistic-item">
+        <h4>Research conducted</h4>
+        <h2>30+</h2>
+      </div>
     </div>
 
   </div>
+</div>
 
-  <h4>Experience</h4>
+<div class="about-me-wrapper">
+  <div class="content-wrapper">
 
-  <div class="experience-block">
-    <div class="experience-item">
-      <p>Car IQ Inc.</p>
-      <span>Senior-lead product designer</span>
-      <span>Oct 2022 - Present</span>
+    <div class="key-strengths">
+      <h2>Key strengths</h2>
+
+      <app-simple-cards [cards]="cards"></app-simple-cards>
     </div>
-    <div class="experience-item">
-      <p>Cieden</p>
-      <span>Senior-lead product designer</span>
-      <span>Jun 2021 - Oct 2022</span>
-    </div>
-    <div class="experience-item">
-      <p>Excited</p>
-      <span>Product designer</span>
-      <span>May 2020 - Mar 2021</span>
-    </div>
-    <div class="experience-item no-margin">
-      <p>Sigma Software Group</p>
-      <span>UX/UI designer</span>
-      <span>Sep 2019 - May 2020</span>
-    </div>
-    <div class="experience-item no-margin">
-      <p>FocusWeb Studio</p>
-      <span>UX/UI designer</span>
-      <span>Oct 2018 - Aug 2019</span>
-    </div>
+
   </div>
+</div>
 
-  <h4>Education</h4>
+<div class="about-me-wrapper lighten">
+  <div class="content-wrapper">
 
-  <div class="education-block">
-    <div class="education-item">
-      <p>Lviv Polytechnic National University</p>
-      <span>Bachelor’s degree, Computer Engineering</span>
+    <div class="skill-and-toolset-wrapper">
+      <h2>Skill & toolset</h2>
+
+      <div class="skill-and-toolset">
+        <div *ngFor="let skillAndToolsetItem of skillAndToolsetItems" class="skill-and-toolset-item">
+          <h4>{{skillAndToolsetItem.title}}</h4>
+          <div class="items-list">
+            <div *ngFor="let item of skillAndToolsetItem.items" class="item">
+              <div class="icon {{item.icon}}"></div>
+              <span class="text">{{item.name}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="education-item">
-      <p>Smart Interface Patterns</p>
-      <span>Deep examination of common components and design patterns in modern interfaces — desktop and mobile.
+
+  </div>
+</div>
+
+<div class="about-me-wrapper">
+  <div class="content-wrapper">
+    <div class="education-block">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <p>Lviv Polytechnic National University</p>
+        <span>Bachelor’s degree, Computer Engineering</span>
+      </div>
+      <div class="education-item">
+        <p>Smart Interface Patterns</p>
+        <span>Deep examination of common components and design patterns in modern interfaces — desktop and mobile.
         Advanced configurators, Complex tables, Maps, Data Visualization, and more.</span>
+      </div>
+      <div class="education-item">
+        <p>Inclusive Web Design</p>
+        <span>Study of WCAG guidelines. Practicing in creating the user-friendly interface for inclusive users.</span>
+      </div>
     </div>
-    <div class="education-item">
-      <p>Inclusive Web Design</p>
-      <span>Study of WCAG guidelines. Practicing in creating the user-friendly interface for inclusive users.</span>
+
+  </div>
+</div>
+
+<div class="about-me-wrapper lighten">
+  <div class="content-wrapper">
+    <div class="experience-block">
+      <h2>Experience</h2>
+
+      <div class="experiences">
+        <div *ngFor="let item of experienceList" class="experience-item">
+          <h3>{{item.name}}</h3>
+          <p class="description">{{item.description}}</p>
+
+          <div class="additional-data">
+            <div class="left-side">
+              <div class="details">
+                <p>Period</p>
+                <span>{{item.period}}</span>
+              </div>
+              <div class="details">
+                <p>Position</p>
+                <span>{{item.position}}</span>
+              </div>
+              <div class="details">
+                <p>Company type</p>
+                <span>{{item.companyType}}</span>
+              </div>
+              <div class="details">
+                <p>Industries</p>
+                <div class="industries">
+                  <div class="industry" *ngFor="let industry of item.industries">
+                    #{{industry}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-side">
+              <p>Responsibilities</p>
+
+              <div class="one-column-block">
+                <div *ngFor="let text of item.responsibilities" class="block-item">
+                  <img src="assets/images/dot.svg" alt="dot">
+                  <span>{{text}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="about-me-wrapper">
+  <div class="content-wrapper">
+    <div class="know-better-wrapper">
+      <h2>Get to know me better</h2>
+
+      <div class="know-better-block">
+        <div class="know-better-side">
+          <div class="know-better-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>I'm all about the nitty-gritty details. I can ensure that every aspect is meticulously refined and executed to perfection.</span>
+          </div>
+          <div class="know-better-item">
+            <img src="assets/images/two-dot.svg" alt="two-dot">
+            <span>When it comes to computer games, count me in! I'm always on the lookout for the latest and greatest gamification techniques to spice up my designs.</span>
+          </div>
+          <div class="know-better-item">
+            <img src="assets/images/three-dot.svg" alt="three-dot">
+            <span>Manga is my jam! Whether it's the epic battles of Bleach or the mind-bending plots of Dr. Stone, I'm hooked.</span>
+          </div>
+        </div>
+        <div class="know-better-side">
+          <div class="know-better-item">
+            <img src="assets/images/four-dot.svg" alt="four-dot">
+            <span>Besides English and Ukrainian, I'm diving into German. As the saying goes, the more languages you know, the richer your experiences become.</span>
+          </div>
+          <div class="know-better-item">
+            <img src="assets/images/five-dot.svg" alt="five-dot">
+            <span>My furry friend Pixel, my faithful companion, inspired the style of this portfolio. The 'P' logo and square-shaped icons reflect his playful
+            energy, while the color palette is drawn from his favorite outfits.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div>
 
-  <h4>Get to know me better</h4>
-
-  <div class="know-better-block">
-    <div class="know-better-side">
-      <div class="know-better-item">
-        <img src="assets/images/dot.svg" alt="dot">
-        <span>I'm all about the nitty-gritty details. I can ensure that every aspect is meticulously refined and executed to perfection.</span>
-      </div>
-      <div class="know-better-item">
-        <img src="assets/images/two-dot.svg" alt="two-dot">
-        <span>When it comes to computer games, count me in! I'm always on the lookout for the latest and greatest gamification techniques to spice up my designs.</span>
-      </div>
-      <div class="know-better-item">
-        <img src="assets/images/three-dot.svg" alt="three-dot">
-        <span>Manga is my jam! Whether it's the epic battles of Bleach or the mind-bending plots of Dr. Stone, I'm hooked.</span>
-      </div>
-    </div>
-    <div class="know-better-side">
-      <div class="know-better-item">
-        <img src="assets/images/four-dot.svg" alt="four-dot">
-        <span>Besides English and Ukrainian, I'm diving into German. As the saying goes, the more languages you know, the richer your experiences become.</span>
-      </div>
-      <div class="know-better-item">
-        <img src="assets/images/five-dot.svg" alt="five-dot">
-        <span>My furry friend Pixel, my faithful companion, inspired the style of this portfolio. The 'P' logo and square-shaped icons reflect his playful
-          energy, while the color palette is drawn from his favorite outfits.</span>
-      </div>
-    </div>
-  </div>
-
-  <h4>What other says about me</h4>
-
-  <div>
-    <app-about-me-expandable-section
-      *ngFor="let data of expandablesDataEn"
-      [name]="data.name"
-      [position]="data.position"
-      [text]="data.text"
-    >
-    </app-about-me-expandable-section>
-  </div>
-
+<div class="about-me-wrapper lighten">
+  <app-footer-navigation></app-footer-navigation>
 </div>
 
 

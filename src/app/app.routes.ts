@@ -20,5 +20,5 @@ export const routes: Routes = [
   { path: 'projects/clarity', component: ClarityProjectComponent },
   { path: 'projects/intelas', component: IntelasProjectComponent },
   { path: 'projects/alifBee-kids', component: AlifBeeKidsProjectComponent },
-  { path: '**', redirectTo: '/' },
+  { path: '**', redirectTo: '/home' },
 ];
