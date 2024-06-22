@@ -129,33 +129,45 @@ export class AboutMeComponent {
           icon: 'quantitative',
         },
         {
-          name: 'Competitor research',
+          name: 'Researches',
           icon: 'competitor',
         },
       ]
     },
     {
-      title: 'UX frameworks & skills',
+      title: 'UX frameworks',
       items: [
+        {
+          name: 'Problem definition',
+          icon: 'problem-definition'
+        },
+        {
+          name: 'Strategic thinking',
+          icon: 'strategic-thinking'
+        },
+        {
+          name: 'Product growth',
+          icon: 'product-growth'
+        },
         {
           name: 'Design thinking approach',
           icon: 'design-thinking',
         },
         {
-          name: 'Usability testing',
-          icon: 'usability-testing',
-        },
-        {
-          name: 'Web design',
-          icon: 'web-design',
-        },
-        {
-          name: 'Mobile app design',
-          icon: 'mobile-app-design',
-        },
-        {
           name: 'Heuristic evaluation',
           icon: 'heuristic-evaluation',
+        },
+        {
+          name: 'UX strategy',
+          icon: 'ux-strategy',
+        },
+        {
+          name: 'UX research',
+          icon: 'ux-research',
+        },
+        {
+          name: 'Data-driven management',
+          icon: 'data-driven-management',
         },
         {
           name: 'Customer journey map',
@@ -166,24 +178,29 @@ export class AboutMeComponent {
           icon: 'user-flow',
         },
         {
-          name: 'Design system',
-          icon: 'design-system',
+          name: 'A/B testing',
+          icon: 'ab-testing',
         },
         {
-          name: 'UX research',
-          icon: 'ux-research',
+          name: 'Usability testing',
+          icon: 'usability-testing',
+        },
+      ]
+    },
+    {
+      title: 'UI & interaction design',
+      items: [
+        {
+          name: 'Web app design',
+          icon: 'web-design',
         },
         {
-          name: 'Prototyping',
-          icon: 'prototyping',
+          name: 'Responsive/Adaptive design',
+          icon: 'white-label',
         },
         {
-          name: 'Data-driven management',
-          icon: 'data-driven-management',
-        },
-        {
-          name: 'UX strategy',
-          icon: 'ux-strategy',
+          name: 'Mobile app design (iOS & Android)',
+          icon: 'mobile-app-design',
         },
         {
           name: 'Embedded systems',
@@ -191,13 +208,37 @@ export class AboutMeComponent {
         },
         {
           name: 'White label',
-          icon: 'white-label',
-        }
+          icon: 'design-system',
+        },
+        {
+          name: 'Apple CarPlay/Android Auto/AAOS',
+          icon: 'car',
+        },
+        {
+          name: 'Design system/Design documentation',
+          icon: 'palette-white',
+        },
+        {
+          name: 'Prototyping',
+          icon: 'prototyping',
+        },
+        {
+          name: 'Accessibility',
+          icon: 'accessibility',
+        },
       ]
     },
     {
       title: 'Additional skills',
       items: [
+        {
+          name: 'Team management',
+          icon: 'team-management',
+        },
+        {
+          name: 'Mentoring',
+          icon: 'mentoring',
+        },
         {
           name: 'HTML/CSS basics',
           icon: 'html',

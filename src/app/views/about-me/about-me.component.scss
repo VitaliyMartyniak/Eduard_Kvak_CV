@@ -232,12 +232,48 @@
                 background-image: url("/assets/images/white-label.svg");
               }
 
+              &.team-management {
+                background-image: url("/assets/images/team-management.svg");
+              }
+
+              &.mentoring {
+                background-image: url("/assets/images/mentoring.svg");
+              }
+
               &.html {
                 background-image: url("/assets/images/html.svg");
               }
 
               &.javascript {
                 background-image: url("/assets/images/javascript.svg");
+              }
+
+              &.problem-definition {
+                background-image: url("/assets/images/problem-definition.svg");
+              }
+
+              &.strategic-thinking {
+                background-image: url("/assets/images/strategic-thinking.svg");
+              }
+
+              &.product-growth {
+                background-image: url("/assets/images/product-growth.svg");
+              }
+
+              &.ab-testing {
+                background-image: url("/assets/images/ab-testing.svg");
+              }
+
+              &.palette-white {
+                background-image: url("/assets/images/palette-white.svg");
+              }
+
+              &.car {
+                background-image: url("/assets/images/car.svg");
+              }
+
+              &.accessibility {
+                background-image: url("/assets/images/accessibility.svg");
               }
             }
 
@@ -427,87 +463,3 @@
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-//.about-me-wrapper {
-//  width: 90%;
-//  margin: 9vh auto;
-//  color: #F7EDE2;
-//
-//  .primary-button {
-//    span {
-//      display: inline-block;
-//      margin-left: 16px;
-//    }
-//  }
-//
-//
-//  h2 {
-//    font-size: 64px;
-//    font-weight: 700;
-//    margin-top: 48px;
-//    margin-bottom: 24px;
-//  }
-//
-//  h4 {
-//    font-size: 40px;
-//    font-weight: 700;
-//    margin-top: 48px;
-//    margin-bottom: 24px;
-//  }
-//
-//  p {
-//    font-size: 20px;
-//    font-weight: 500;
-//    line-height: 32px;
-//    margin-bottom: 32px;
-//    margin-top: 0;
-//  }
-//
-//  .experience-block {
-//    display: flex;
-//    flex-wrap: wrap;
-//    background-color: rgba(256,256,256, 0.08);
-//    padding: 48px;
-//    border-radius: 56px;
-//
-//    .experience-item {
-//      display: flex;
-//      flex-direction: column;
-//      width: 33.33%;
-//      margin-bottom: 40px;
-//
-//      &.no-margin {
-//        margin-bottom: 0;
-//      }
-//
-//      p {
-//        margin: 0;
-//        font-size: 24px;
-//        font-weight: 700;
-//        color: #D57A66;
-//      }
-//
-//      span {
-//        display: inline-block;
-//        color: #F7EDE2;
-//        font-size: 20px;
-//        font-weight: 500;
-//        margin-top: 8px;
-//      }
-//    }
-//  }
-//
-//
-//
-
-//}
