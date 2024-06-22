@@ -2,6 +2,9 @@ import { Component } from '@angular/core';
 import {ExpandableSectionComponent} from "../skills-and-services/components/expandable-section/expandable-section.component";
 import {Location, NgForOf, NgStyle} from "@angular/common";
 import {Router, RouterLink} from "@angular/router";
+import {NavigationComponent} from "../../components/navigation/navigation.component";
+import {ProjectCardsComponent} from "../../components/project-cards/project-cards.component";
+import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
 
 @Component({
   selector: 'app-projects',
@@ -10,7 +13,10 @@ import {Router, RouterLink} from "@angular/router";
     ExpandableSectionComponent,
     NgForOf,
     RouterLink,
-    NgStyle
+    NgStyle,
+    NavigationComponent,
+    ProjectCardsComponent,
+    FooterNavigationComponent
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
@@ -24,34 +30,78 @@ export class ProjectsComponent {
     {
       name: 'car-iq-pay',
       title: 'Car IQ Pay',
-      hashes: ['Automotive', 'Financial services', 'FinTech', 'Fleet management', 'Payments'],
+      subtitle: 'The first payment platform to enable vehicles to initiate, validate, and complete authorized transactions.',
+      details: [
+        {
+          title: 'Role',
+          data: 'Lead product designer',
+        },
+        {
+          title: 'Team',
+          data: '2 designers, 2 product managers, 2 front-end developers',
+        },
+        {
+          title: 'Deliverables',
+          data: 'Mobile app (iOS & Android), Web app (responsive), Design system & documentation, and more',
+        }
+      ]
     },
     {
       name: 'clarity',
       title: 'Clarity',
-      hashes: ['Consulting', 'CRM', 'Data integration', 'E-Commerce', 'Development'],
+      subtitle: 'Advanced solutions for seamless content sharing and engaging interactive reading.',
+      details: [
+        {
+          title: 'Role',
+          data: 'Lead product designer',
+        },
+        {
+          title: 'Team',
+          data: '1 designer, 1 project manager',
+        },
+        {
+          title: 'Deliverables',
+          data: 'Q&A platform, e-Book reader (responsive)',
+        }
+      ]
     },
     {
       name: 'intelas',
       title: 'Intelas',
-      hashes: ['Real estate', 'FinTech', 'Data integration'],
+      subtitle: 'A leading platform in financial data standardization, aimed at real estate asset managers and accountants.',
+      details: [
+        {
+          title: 'Role',
+          data: 'Lead product designer',
+        },
+        {
+          title: 'Team',
+          data: '1 designer, 1 business analytic',
+        },
+        {
+          title: 'Deliverables',
+          data: 'Web app',
+        }
+      ]
     },
     {
       name: 'alifBee-kids',
       title: 'AlifBee Kids',
-      hashes: ['Learing platform'],
-    }
+      subtitle: 'A comprehensive mobile app that helps children learn the Arabic language through an engaging and gamified experience.',
+      details: [
+        {
+          title: 'Role',
+          data: 'Lead product designer',
+        },
+        {
+          title: 'Team',
+          data: '1 designer',
+        },
+        {
+          title: 'Deliverables',
+          data: 'Mobile app (iOS & Android)',
+        }
+      ]
+    },
   ]
-
-  getBackgroundImageUrl(name: string) {
-    return `url('assets/images/${name}.png')`
-  }
-
-  navigateToProject(name: string) {
-    this.router.navigate([`projects/${name}`]);
-  }
-
-  goBack() {
-    this.location.back()
-  }
 }

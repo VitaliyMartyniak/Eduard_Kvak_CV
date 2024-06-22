@@ -1,31 +1,15 @@
 <div class="projects-wrapper">
-  <button class="primary-button" (click)="goBack()">
-    <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
-    <span>Back</span>
-  </button>
+  <div class="content-wrapper">
+    <app-navigation></app-navigation>
 
-  <h2>Projects</h2>
-
-  <div class="projects">
-    <div class="project" *ngFor="let project of projects" (click)="navigateToProject(project.name)">
-      <div class="project-photo"
-           [ngStyle]="{'background-image': getBackgroundImageUrl(project.name)}"
-      ></div>
-      <div class="project-info">
-        <h3>
-          {{project.title}}
-        </h3>
-
-        <div class="hashes">
-          <div class="hash" *ngFor="let hash of project.hashes">
-            #{{hash}}
-          </div>
-        </div>
-      </div>
+    <div class="projects-block">
+      <h2>Projects</h2>
+      <app-project-cards [projects]="projects"></app-project-cards>
     </div>
   </div>
-
 </div>
 
-
+<div class="projects-wrapper lighten">
+  <app-footer-navigation></app-footer-navigation>
+</div>
 
