@@ -8,9 +8,14 @@ nav {
     font-weight: 700;
     margin-right: 48px;
     color: #D57A66;
+    border-bottom: 1px solid transparent;
 
     &.active {
       color: #F7EDE2;
+    }
+
+    &:not(.active):hover {
+      border-bottom: 1px solid #D57A66;
     }
   }
 }
