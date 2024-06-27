@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {AboutMeExpandableSectionComponent} from "./components/about-me-expandable-section/about-me-expandable-section.component";
-import {ExpandableSectionComponent} from "../skills-and-services/components/expandable-section/expandable-section.component";
+import {ExpandableSectionComponent} from "../../components/expandable-section/expandable-section.component";
 import {NgForOf} from "@angular/common";
 import {Location} from '@angular/common';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
@@ -10,19 +9,20 @@ import { saveAs } from 'file-saver';
 import {NavigationComponent} from "../../components/navigation/navigation.component";
 import {SimpleCardsComponent} from "../../components/simple-cards/simple-cards.component";
 import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
+import {NumberAnimationComponent} from "../../components/number-animation/number-animation.component";
 
 @Component({
   selector: 'app-about-me',
   standalone: true,
   imports: [
     RouterLink,
-    AboutMeExpandableSectionComponent,
     ExpandableSectionComponent,
     NgForOf,
     HttpClientModule,
     NavigationComponent,
     SimpleCardsComponent,
-    FooterNavigationComponent
+    FooterNavigationComponent,
+    NumberAnimationComponent
   ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
@@ -328,10 +328,6 @@ export class AboutMeComponent {
       ]
     }
   ]
-
-  goBack() {
-    this.location.back()
-  }
 
   downloadPdf(): void {
     this.http.get('assets/pdf/CV.pdf', { responseType: 'blob' }).pipe(

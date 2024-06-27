@@ -1,106 +1,130 @@
 <div class="project-wrapper">
   <div class="content-wrapper">
-    <button class="primary-button" (click)="goBack()">
-      <img src="assets/images/Back-Icon-Black.svg" alt="Back arrow">
-      <span>Back</span>
-    </button>
+    <header>
+      <button class="transparent-button" (click)="goBack()">
+        <img src="assets/images/back-icon.svg" alt="Back arrow">
+        <span>Back</span>
+      </button>
+    </header>
 
-    <h2>Clarity</h2>
+    <div class="main-info">
+      <div class="left-part">
+        <h2>Clarity</h2>
 
-    <p>
-      Clarity Ventures provides web development consulting services in the following core areas: eCommerce,
-      website integration with ERP & CRM systems, and web design.
-    </p>
+        <p>
+          Clarity Ventures provides web development consulting services in the following core areas: eCommerce,
+          website integration with ERP & CRM systems, and web design.
+        </p>
 
-    <div class="industries">
-      <h6>Industries</h6>
-
-      <div class="hashes">
-        <div class="hash" *ngFor="let hash of hashes">
-          #{{hash}}
+        <div class="project-links">
+          <a href="https://www.crunchbase.com/organization/clarity-ventures-inc" target="_blank">
+            <img src="assets/images/link-icon.svg">
+            <span>Crunchbase</span>
+          </a>
+          <a href="https://www.linkedin.com/company/clarity-ventures-inc./" target="_blank">
+            <img src="assets/images/link-icon.svg">
+            <span>Website</span>
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="location">
-      <h6>Location</h6>
-
-      <p>Austin, TX, US</p>
-    </div>
-
-    <div class="company-profiles">
-      <h6>Company profiles</h6>
-
-      <div class="navigation">
-        <a class="alt-button" href="https://www.crunchbase.com/organization/clarity-ventures-inc" target="_blank">Crunchbase</a>
-        <a class="alt-button" href="https://www.linkedin.com/company/clarity-ventures-inc./" target="_blank">Linkedin</a>
+      <div class="right-part">
+        <div class="info-block">
+          <div class="item">
+            <p><img src="assets/images/role-orange.svg"><span>Role</span></p>
+            <span>Lead product designer</span>
+          </div>
+          <div class="item">
+            <p><img src="assets/images/methodology-orange.svg"><span>Methodology</span></p>
+            <span>Hybrid</span>
+          </div>
+          <div class="item">
+            <p><img src="assets/images/project-type-orange.svg"><span>Project type</span></p>
+            <span>B2C</span>
+          </div>
+          <div class="item">
+            <p><img src="assets/images/team-orange.svg"><span>Team</span></p>
+            <span>1 designer, 1 project manager</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="full-width-wrapper">
-    <img style="width: 100%" src="../../../../../assets/images/clarity-1st-screen.png" alt="Car IQ Pay 1st screen">
+    <img class="full-width-img with-vert-padding" src="../../../../../assets/images/clarity-1st-screen.png" alt="Clarity 1st screen">
   </div>
 
   <div class="content-wrapper">
-    <div class="scope">
-      <h5>Scope</h5>
+    <div class="overview">
+      <h5>Overview</h5>
 
-      <p>The client requested the design of two distinct projects: an interactive content platform and an e-book reader. The interactive
-        content platform would allow users to ask questions, write articles, post videos, and engage with various content types.
-        The e-book reader was to be a user-friendly application for managing and displaying the client’s e-book collection.
-        My responsibilities covered:</p>
+      <p>The aim was to design two projects: an interactive content platform and an e-book
+        reader. The platform would enable users to ask questions, write articles, post
+        videos, and engage with diverse content types, while the e-book reader would
+        facilitate the management and display of e-book collections.</p>
 
-      <div class="one-column-block">
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Conducting user research to gain insights into user needs, behaviors, and preferences.</span>
+      <div class="two-column-block">
+        <div class="two-column-block-side">
+          <h4>Responsibilities</h4>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Conducting user research to understand user needs, behaviors, and preferences.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Conducting competitor analysis.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Creating product architecture.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Developing designs, documentation, and specifications.</span>
+          </div>
         </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Conducting competitor analysis.</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Creating product architecture.</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Creating designs, documentation, and specifications.</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="challenges">
-      <h5>Challenges</h5>
-
-      <div class="one-column-block">
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Creating unique architecture and functionality that combines features of YouTube, Medium, and StackOverflow.</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Developing a bounty and reward systems.</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Providing the ability to leave comments in any convenient way (voice message, photo, video, text, etc.).</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Supporting different user roles.</span>
-        </div>
-        <div class="block-item">
-          <img src="assets/images/dot.svg" alt="dot">
-          <span>Supporting different device types.</span>
+        <div class="two-column-block-side">
+          <h4>Challenges</h4>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Developing a unique architecture that combines features of YouTube, Medium, and StackOverflow.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Implementing bounty and reward systems.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Supporting various comment types (voice, photo, video, text).</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Supporting different user roles.</span>
+          </div>
+          <div class="block-item">
+            <img src="assets/images/dot.svg" alt="dot">
+            <span>Supporting different device types.</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="full-width-wrapper">
-    <img src="../../../../../assets/images/clarity-2nd-screen.png" alt="Car IQ Pay 2nd screen">
+  <div class="full-width-wrapper with-vert-padding">
+    <img src="../../../../../assets/images/clarity-2nd-screen.png" alt="Clarity 2nd screen">
+  </div>
+
+  <div class="content-wrapper">
+    <div class="result">
+      <h2>Result</h2>
+
+      <app-simple-cards [twoColumns]="true" [cards]="cards"></app-simple-cards>
+    </div>
+  </div>
+
+  <div class="full-width-wrapper with-vert-padding">
+    <img src="../../../../../assets/images/car-iq-pay-3rd-screen.png" alt="Car IQ Pay 3rd screen">
   </div>
 
   <div class="content-wrapper">
@@ -109,99 +133,66 @@
 
       <p>Explore the various stages below to gain insight into our approach and methodologies.</p>
 
-<!--      <div class="working-process-image-wrapper">-->
-<!--        <div class="working-process-image"></div>-->
-<!--      </div>-->
-      <div class="working-process-image"></div>
-
-      <div class="working-process-list">
-        <app-expandable-section title="Research"
-        >
+      <div class="working-process-wrapper">
+        <div class="working-process-list">
+          <app-expandable-section title="Research"
+          >
           <span>
             In the research phase, we undertook a comprehensive analysis to gather essential insights shaping the
             project's direction. This involved studying user behaviors and preferences, examining competitors to
             discern market trends and opportunities, and conducting brainstorming sessions to generate innovative ideas.
           </span>
-        </app-expandable-section>
-        <app-expandable-section title="Ideate"
-        >
+          </app-expandable-section>
+          <app-expandable-section title="Ideate"
+          >
           <span>
             During this phase, we closely worked with stakeholders in workshops to come up with different ideas and solutions.
             This included hosting brainstorming sessions and creating wireframes to explore different ways to design the project.
             To keep the users in mind, we thought about different situations they might encounter. Then, we chose the best ideas
             that matched project goals.
           </span>
-        </app-expandable-section>
-        <app-expandable-section title="Design"
-        >
+          </app-expandable-section>
+          <app-expandable-section title="Design"
+          >
           <span>
             In the design phase, we crafted detailed and polished designs, refining our top ideas into visually
             compelling and user-friendly interfaces. Alongside this, we established a comprehensive UI Kit, ensuring
             consistency and efficiency across the project's design elements.
           </span>
-        </app-expandable-section>
-        <app-expandable-section title="Review"
-        >
+          </app-expandable-section>
+          <app-expandable-section title="Review"
+          >
           <span>
             In the review phase, we carefully checked the designs by testing them and getting feedback. We did
             tests to see if everything worked well and asked stakeholders and team members for their thoughts.
             Then, we made changes to improve the designs based on the feedback we received.
           </span>
-        </app-expandable-section>
-        <app-expandable-section title="Deliver"
-                                [showBottomLine]="false"
-        >
+          </app-expandable-section>
+          <app-expandable-section title="Deliver"
+                                  [showBottomLine]="false"
+          >
           <span>
             After everything was completed, we prepared all resources and conducted a session where we presented
             the solutions to the developers, making sure they had a clear understanding of the designs and how
             to implement them accurately.
           </span>
-        </app-expandable-section>
+          </app-expandable-section>
+        </div>
+
+        <div class="working-process-image"></div>
       </div>
     </div>
   </div>
 
   <div class="full-width-wrapper">
-    <img src="../../../../../assets/images/clarity-3rd-screen.png" alt="Car IQ Pay 3rd screen">
+    <img class="full-width-img" src="../../../../../assets/images/clarity-4th-screen.png" alt="Car IQ Pay 4th screen">
   </div>
 
-  <div class="content-wrapper">
-    <div class="result">
-      <h5>Result</h5>
-
-      <div class="result-items">
-        <div class="result-item">
-          <p>Enhanced user experience</p>
-          <span>The extensive user research and competitor analysis enabled us to tailor the platform to user
-            needs, behaviors, and preferences, resulting in a highly intuitive and user-friendly interface.</span>
-        </div>
-        <div class="result-item">
-          <p>Comprehensive product architecture</p>
-          <span>The innovative architecture seamlessly combined features from YouTube, Medium, and StackOverflow,
-            offering a unique and engaging user experience that supported diverse content types and interaction methods.</span>
-        </div>
-        <div class="result-item">
-          <p>Effective commenting system</p>
-          <span>The ability for users to leave comments in various formats (voice messages, photos, videos, text) was
-            successfully implemented, fostering dynamic and versatile user interactions.</span>
-        </div>
-        <div class="result-item">
-          <p>User roles and device support</p>
-          <span>The platform efficiently supported different user roles and device types, ensuring accessibility and
-            functionality across various user scenarios and technological environments.</span>
-        </div>
-      </div>
+  <footer>
+    <div class="content-wrapper">
+      <app-single-project-footer></app-single-project-footer>
     </div>
-
-    <div class="contact-me">
-      <div>
-        <p>Want to know more about this project?</p>
-        <span>Please feel free to reach out to me for more details. I would be happy to provide additional information!</span>
-      </div>
-
-      <a [routerLink]="'/contacts'">Contact me</a>
-    </div>
-  </div>
+  </footer>
 
 </div>
 

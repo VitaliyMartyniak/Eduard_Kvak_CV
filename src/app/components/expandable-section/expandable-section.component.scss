@@ -1,0 +1,51 @@
+.section {
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+  margin-top: 24px;
+
+  &:hover .section-title {
+    border-bottom: 2px solid #D57A66 !important;
+  }
+
+  &.bottom-line {
+    border-bottom: 4px solid #F7EDE2;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    .section-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      color: #D57A66;
+      margin: 0;
+      border-bottom: 2px solid transparent;
+    }
+
+    .toggle-btn {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  .section-content {
+    margin: 0;
+    display: none;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &.expanded {
+    .section-content {
+      display: block;
+    }
+  }
+}

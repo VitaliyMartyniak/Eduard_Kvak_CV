@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ExpandableSectionComponent} from "../skills-and-services/components/expandable-section/expandable-section.component";
+import {ExpandableSectionComponent} from "../../components/expandable-section/expandable-section.component";
 import {Location, NgForOf, NgStyle} from "@angular/common";
 import {Router, RouterLink} from "@angular/router";
 import {NavigationComponent} from "../../components/navigation/navigation.component";

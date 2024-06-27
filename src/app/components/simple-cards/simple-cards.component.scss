@@ -4,7 +4,6 @@
   justify-content: space-between;
 
   .card {
-    width: 32%;
     padding: 48px;
     border: 2px solid #D57A66;
     border-right: 6px solid #D57A66;
@@ -67,6 +66,50 @@
       &.lamp {
         background-image: url("/assets/images/lamp.svg");
       }
+
+      &.innovative-integration {
+        background-image: url("/assets/images/innovative-integration.svg");
+      }
+
+      &.accessibility {
+        background-image: url("/assets/images/accessibility.svg");
+      }
+
+      &.scalability {
+        background-image: url("/assets/images/scalability.svg");
+      }
+
+      &.enhanced-user-experience {
+        background-image: url("/assets/images/enhanced-user-experience.svg");
+      }
+
+      &.comprehensive-product {
+        background-image: url("/assets/images/comprehensive-product.svg");
+      }
+
+      &.commenting-system {
+        background-image: url("/assets/images/commenting-system.svg");
+      }
+
+      &.user-roles {
+        background-image: url("/assets/images/user-roles.svg");
+      }
+
+      &.data-driven-management-orange {
+        background-image: url("/assets/images/data-driven-management-orange.svg");
+      }
+
+      &.prototyping-orange {
+        background-image: url("/assets/images/prototyping-orange.svg");
+      }
+
+      &.star {
+        background-image: url("/assets/images/star.svg");
+      }
+
+      &.cloud {
+        background-image: url("/assets/images/cloud.svg");
+      }
     }
 
     .title {
@@ -79,6 +122,9 @@
     }
 
     .text {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
       margin-bottom: 0;
       margin-top: 0;
     }

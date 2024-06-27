@@ -5,6 +5,12 @@
     border-bottom: 2px solid #F7EDE2;
     padding-bottom: 48px;
     margin-bottom: 48px;
+    text-decoration: none;
+    color: #F7EDE2;
+
+    &:hover span.link {
+      border-bottom: 2px solid #D57A66 !important;
+    }
 
     &:last-child {
       border-bottom: none;
@@ -26,7 +32,7 @@
       .subtitle {
         display: inline-block;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 32px;
         margin-bottom: 24px;
       }
@@ -44,27 +50,27 @@
 
         span {
           font-size: 20px;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 32px;
         }
       }
 
-      a {
-        display: flex;
-        align-items: center;
+      span.link {
+        display: inline-block;
         margin-top: 32px;
         font-size: 20px;
         font-weight: 700;
         line-height: 32px;
         color: #D57A66;
+        border-bottom: 2px solid transparent;
 
         .view-project-icon {
           display: inline-block;
-          width: 32px;
-          height: 32px;
+          width: 16px;
+          height: 16px;
           background: url("/assets/images/view-project-arrow.svg") center no-repeat;
           background-size: contain;
-          transform: translateX(8px);
+          margin-left: 8px;
         }
       }
     }

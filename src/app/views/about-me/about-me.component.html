@@ -1,7 +1,9 @@
+<header>
+  <app-navigation></app-navigation>
+</header>
+
 <div class="about-me-wrapper">
   <div class="content-wrapper">
-    <app-navigation></app-navigation>
-
     <div class="main-info">
       <div>
         <h2>
@@ -39,19 +41,27 @@
     <div class="personal-statistic">
       <div class="statistic-item">
         <h4>Years of experiece</h4>
-        <h2>6+</h2>
+        <h2>
+          <app-number-animation [targetNumber]="6"></app-number-animation>+
+        </h2>
       </div>
       <div class="statistic-item">
         <h4>Projects complete</h4>
-        <h2>25+</h2>
+        <h2>
+          <app-number-animation [targetNumber]="25"></app-number-animation>+
+        </h2>
       </div>
       <div class="statistic-item">
         <h4>Industries served</h4>
-        <h2>8+</h2>
+        <h2>
+          <app-number-animation [targetNumber]="8"></app-number-animation>+
+        </h2>
       </div>
       <div class="statistic-item">
         <h4>Research conducted</h4>
-        <h2>30+</h2>
+        <h2>
+          <app-number-animation [targetNumber]="30"></app-number-animation>+
+        </h2>
       </div>
     </div>
 
