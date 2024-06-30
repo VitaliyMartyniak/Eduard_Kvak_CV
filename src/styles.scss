@@ -67,6 +67,11 @@ button {
   font-weight: 700;
   line-height: 32px;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
+
+  &:hover {
+    border-bottom: 2px solid #D57A66;
+  }
 
   img {
     margin-right: 8px;
@@ -116,6 +121,11 @@ button {
             font-weight: 700;
             line-height: 32px;
             margin-right: 48px;
+            border-bottom: 2px solid transparent;
+
+            &:hover {
+              border-bottom: 2px solid #D57A66;
+            }
 
             img {
               margin-right: 8px;

@@ -10,7 +10,7 @@ import {interval, takeWhile} from "rxjs";
 })
 export class NumberAnimationComponent implements OnInit, OnChanges{
   @Input() targetNumber: number = 100;
-  duration: number = 2000;
+  duration: number = 1500;
 
   currentNumber: number = 0;
 

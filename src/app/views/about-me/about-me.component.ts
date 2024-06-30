@@ -36,14 +36,14 @@ export class AboutMeComponent {
     {
       icon: 'medal',
       title: 'Proactive',
-      text: 'I take the initiative in identifying opportunities for improvement and act on them promptly. My proactive approach ' +
-        'ensures that projects are always moving forward and deadlines are met.'
+      text: 'I take the initiative in identifying opportunities for improvement and act on them promptly. ' +
+        'My proactive approach ensures that projects are always moving forward and deadlines are met.'
     },
     {
       icon: 'graph',
       title: 'Committed to growth',
-      text: 'I am dedicated to continuous learning and professional development. I regularly engage in courses, workshops, and ' +
-        'reading to stay updated with the latest design trends and technologies.'
+      text: 'I am dedicated to continuous learning and professional development. I regularly engage in courses, ' +
+        'workshops, and reading to stay updated with the latest design trends and technologies.'
     },
     {
       icon: 'square',
@@ -224,7 +224,7 @@ export class AboutMeComponent {
         },
         {
           name: 'Accessibility',
-          icon: 'accessibility',
+          icon: 'accessibility-white',
         },
       ]
     },
