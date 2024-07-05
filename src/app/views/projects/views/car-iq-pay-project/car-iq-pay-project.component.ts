@@ -52,10 +52,62 @@ export class CarIqPayProjectComponent {
     }
   ];
 
+  workingProcessList = [
+    {
+      title: 'Plan',
+      content: `<span class="text">1. Analyze data and feedback from the previous sprint.<br>
+            2. Brainstorm and define new features and enhancements.<br>
+            3. Prioritize features and assign tasks.</span>`,
+      opened: false,
+      id: 1,
+    },
+    {
+      title: 'Design',
+      content: `<span class="text">1. Create and refine wireframes for new features.<br>
+            2. Develop high-fidelity mockups, prototypes, and design documentation.<br>
+            3. Conduct collaborative sessions with developers for design alignment.</span>`,
+      opened: false,
+      id: 2,
+    },
+    {
+      title: 'Develop',
+      content: `<span class="text">1. Implement features based on design assets and documentation.<br>
+            2. Collaborate to address any issues or changes.</span>`,
+      opened: false,
+      id: 3,
+    },
+    {
+      title: 'Test',
+      content: `<span class="text">1. Deploy the new build to a mock environment.<br>
+            2. Conduct thorough testing for functionality and design integrity.<br>
+            3. Create detailed bug tickets for any discovered issues.</span>`,
+      opened: false,
+      id: 4,
+    },
+    {
+      title: 'Launch',
+      content: `<span class="text">1. Release the new build to the production environment.<br>
+            2. Monitor user interactions using tools like Pendo and conduct A/B testing.<br>
+            3. Gather qualitative feedback through user interviews or usability testing.</span>`,
+      opened: false,
+      id: 5,
+    },
+  ]
+
   constructor(private location: Location) {
   }
 
   goBack() {
     this.location.back()
+  }
+
+  toggleSection(id: number) {
+    this.workingProcessList.forEach(item => {
+      if (item.id !== id) {
+        item.opened = false;
+      } else {
+        item.opened = !item.opened;
+      }
+    })
   }
 }

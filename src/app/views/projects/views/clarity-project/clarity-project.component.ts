@@ -50,10 +50,62 @@ export class ClarityProjectComponent {
     },
   ];
 
+  workingProcessList = [
+    {
+      title: 'Research',
+      content: `<span class="text">1. Conduct comprehensive analysis to gather insights.<br>
+            2. Study user behaviors and preferences.<br>
+            3. Examine competitors to identify trends and opportunities.<br>
+            4. Brainstorm to generate innovative ideas.</span>`,
+      opened: false,
+      id: 1,
+    },
+    {
+      title: 'Ideate',
+      content: `<span class="text">1. Host workshops with stakeholders to brainstorm solutions.<br>
+            2. Create wireframes to explore different design approaches.<br>
+            3. Choose the best ideas that align with project goals.</span>`,
+      opened: false,
+      id: 2,
+    },
+    {
+      title: 'Design',
+      content: `<span class="text">1. Develop detailed and polished designs.<br>
+            2. Refine top ideas into visually compelling, user-friendly interfaces.<br>
+            3. Establish a comprehensive UI Kit for consistency.</span>`,
+      opened: false,
+      id: 3,
+    },
+    {
+      title: 'Review',
+      content: `<span class="text">1. Test and gather feedback on designs.<br>
+            2. Adjust designs based on feedback from stakeholders and team members.</span>`,
+      opened: false,
+      id: 4,
+    },
+    {
+      title: 'Deliver',
+      content: `<span class="text">1. Prepare all resources and conduct a session with developers.<br>
+            2. Ensure clear understanding of designs and accurate implementation.</span>`,
+      opened: false,
+      id: 5,
+    },
+  ]
+
   constructor(private location: Location) {
   }
 
   goBack() {
     this.location.back()
+  }
+
+  toggleSection(id: number) {
+    this.workingProcessList.forEach(item => {
+      if (item.id !== id) {
+        item.opened = false;
+      } else {
+        item.opened = !item.opened;
+      }
+    })
   }
 }

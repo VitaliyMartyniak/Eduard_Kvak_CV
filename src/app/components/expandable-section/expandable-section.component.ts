@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {NgClass, NgIf} from "@angular/common";
 
 @Component({
@@ -12,11 +12,12 @@ import {NgClass, NgIf} from "@angular/common";
   styleUrl: './expandable-section.component.scss'
 })
 export class ExpandableSectionComponent {
-  isExpanded: boolean = false;
+  @Input() isExpanded: boolean = false;
   @Input() title: string = "";
   @Input() showBottomLine = true;
+  @Output() toggle = new EventEmitter();
 
   toggleSection(): void {
-    this.isExpanded = !this.isExpanded;
+    this.toggle.emit();
   }
 }

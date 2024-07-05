@@ -133,35 +133,14 @@
 
       <div class="working-process-wrapper">
         <div class="working-process-list">
-          <app-expandable-section title="Research"
+          <app-expandable-section
+            *ngFor="let item of workingProcessList; index as i"
+            [title]="item.title"
+            [isExpanded]="item.opened"
+            [showBottomLine]="i !== workingProcessList.length - 1"
+            (toggle)="toggleSection(item.id)"
           >
-          <span>
-            1. Conduct in-depth user interviews and surveys.<br>
-            2. Perform competitor analysis to identify market trends and gaps.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Ideate"
-          >
-          <span>
-            1. Host brainstorming sessions and workshops with stakeholders.<br>
-            2. Create high-fidelity wireframes to explore design decisions.<br>
-            3. Prioritize ideas based on feasibility, impact, and alignment with project objectives.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Design"
-          >
-          <span>
-            1. Develop detailed and polished designs.<br>
-            2. Create a UI Kit for design consistency and efficiency.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Prototype"
-                                  [showBottomLine]="false"
-          >
-          <span>
-            1. Develop an interactive, functional prototype.<br>
-            2. Highlight key functionalities and gather feedback for refinement.
-          </span>
+            <span [innerHTML]="item.content"></span>
           </app-expandable-section>
         </div>
 

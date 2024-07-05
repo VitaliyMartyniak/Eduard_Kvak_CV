@@ -136,45 +136,14 @@
 
       <div class="working-process-wrapper">
         <div class="working-process-list">
-          <app-expandable-section title="Research"
+          <app-expandable-section
+            *ngFor="let item of workingProcessList; index as i"
+            [title]="item.title"
+            [isExpanded]="item.opened"
+            [showBottomLine]="i !== workingProcessList.length - 1"
+            (toggle)="toggleSection(item.id)"
           >
-          <span>
-            1. Conduct comprehensive analysis to gather insights.<br>
-            2. Study user behaviors and preferences.<br>
-            3. Examine competitors to identify trends and opportunities.<br>
-            4. Brainstorm to generate innovative ideas.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Ideate"
-          >
-          <span>
-            1. Host workshops with stakeholders to brainstorm solutions.<br>
-            2. Create wireframes to explore different design approaches.<br>
-            3. Choose the best ideas that align with project goals.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Design"
-          >
-          <span>
-            1. Develop detailed and polished designs.<br>
-            2. Refine top ideas into visually compelling, user-friendly interfaces.<br>
-            3. Establish a comprehensive UI Kit for consistency.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Review"
-          >
-          <span>
-            1. Test and gather feedback on designs.<br>
-            2. Adjust designs based on feedback from stakeholders and team members.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Deliver"
-                                  [showBottomLine]="false"
-          >
-          <span>
-            1. Prepare all resources and conduct a session with developers.<br>
-            2. Ensure clear understanding of designs and accurate implementation.
-          </span>
+            <span [innerHTML]="item.content"></span>
           </app-expandable-section>
         </div>
 

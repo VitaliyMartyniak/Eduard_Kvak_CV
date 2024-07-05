@@ -44,10 +44,52 @@ export class IntelasProjectComponent {
     }
   ];
 
+  workingProcessList = [
+    {
+      title: 'Research',
+      content: `<span class="text">1. Conduct in-depth user interviews and surveys.<br>
+            2. Perform competitor analysis to identify market trends and gaps.</span>`,
+      opened: false,
+      id: 1,
+    },
+    {
+      title: 'Ideate',
+      content: `<span class="text">1. Host brainstorming sessions and workshops with stakeholders.<br>
+            2. Create high-fidelity wireframes to explore design decisions.<br>
+            3. Prioritize ideas based on feasibility, impact, and alignment with project objectives.</span>`,
+      opened: false,
+      id: 2,
+    },
+    {
+      title: 'Design',
+      content: `<span class="text">1. Develop detailed and polished designs.<br>
+            2. Create a UI Kit for design consistency and efficiency.</span>`,
+      opened: false,
+      id: 3,
+    },
+    {
+      title: 'Prototype',
+      content: `<span class="text">1. Develop an interactive, functional prototype.<br>
+            2. Highlight key functionalities and gather feedback for refinement.</span>`,
+      opened: false,
+      id: 4,
+    },
+  ]
+
   constructor(private location: Location) {
   }
 
   goBack() {
     this.location.back()
+  }
+
+  toggleSection(id: number) {
+    this.workingProcessList.forEach(item => {
+      if (item.id !== id) {
+        item.opened = false;
+      } else {
+        item.opened = !item.opened;
+      }
+    })
   }
 }

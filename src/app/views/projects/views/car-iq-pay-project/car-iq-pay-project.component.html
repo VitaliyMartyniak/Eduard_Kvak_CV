@@ -148,45 +148,14 @@
 
       <div class="working-process-wrapper">
         <div class="working-process-list">
-          <app-expandable-section title="Plan"
+          <app-expandable-section
+            *ngFor="let item of workingProcessList; index as i"
+            [title]="item.title"
+            [isExpanded]="item.opened"
+            [showBottomLine]="i !== workingProcessList.length - 1"
+            (toggle)="toggleSection(item.id)"
           >
-          <span>
-            1. Analyze data and feedback from the previous sprint.<br>
-            2. Brainstorm and define new features and enhancements.<br>
-            3. Prioritize features and assign tasks.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Design"
-          >
-          <span class="text-bottom-margin">
-            1. Create and refine wireframes for new features.<br>
-            2. Develop high-fidelity mockups, prototypes, and design documentation.<br>
-            3. Conduct collaborative sessions with developers for design alignment.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Develop"
-          >
-          <span class="text-bottom-margin">
-            1. Implement features based on design assets and documentation.<br>
-            2. Collaborate to address any issues or changes.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Test"
-          >
-          <span class="text-bottom-margin">
-            1. Deploy the new build to a mock environment.<br>
-            2. Conduct thorough testing for functionality and design integrity.<br>
-            3. Create detailed bug tickets for any discovered issues.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Launch"
-                                  [showBottomLine]="false"
-          >
-          <span class="text-bottom-margin">
-            1. Release the new build to the production environment.<br>
-            2. Monitor user interactions using tools like Pendo and conduct A/B testing.<br>
-            3. Gather qualitative feedback through user interviews or usability testing.
-          </span>
+          <span [innerHTML]="item.content"></span>
           </app-expandable-section>
         </div>
 

@@ -51,6 +51,8 @@ button {
 }
 
 .alt-button {
+  display: flex;
+  align-items: center;
   background-color: transparent;
   color: #F7EDE2;
   padding: 16px 32px;
@@ -73,9 +75,12 @@ button {
   font-weight: 700;
   line-height: 32px;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
 
-  &:hover {
+  span {
+    border-bottom: 2px solid transparent;
+  }
+
+  &:hover span{
     border-bottom: 2px solid #D57A66;
   }
 
@@ -122,9 +127,12 @@ button {
           font-weight: 700;
           line-height: 32px;
           margin-right: 48px;
-          border-bottom: 2px solid transparent;
 
-          &:hover {
+          span {
+            border-bottom: 2px solid transparent;
+          }
+
+          &:hover span {
             border-bottom: 2px solid #D57A66;
           }
 
@@ -320,7 +328,7 @@ button {
       .working-process-list {
         width: calc(100% - 505px);
 
-        span {
+        .text {
           display: inline-block;
           font-size: 20px;
           line-height: 32px;

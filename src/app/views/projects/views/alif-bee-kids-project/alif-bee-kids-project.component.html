@@ -127,37 +127,14 @@
 
       <div class="working-process-wrapper">
         <div class="working-process-list">
-          <app-expandable-section title="Research"
+          <app-expandable-section
+            *ngFor="let item of workingProcessList; index as i"
+            [title]="item.title"
+            [isExpanded]="item.opened"
+            [showBottomLine]="i !== workingProcessList.length - 1"
+            (toggle)="toggleSection(item.id)"
           >
-          <span>
-            1. Use analytics to identify user pain points and drop-off areas.<br>
-            2. Conduct competitor analysis to find industry standards and improvement opportunities.<br>
-            3. Inform design strategy for a user-friendly registration flow.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Ideate"
-          >
-          <span>
-            1. Hold intensive brainstorming sessions with stakeholders.<br>
-            2. Create and refine wireframes to explore different design directions.<br>
-            3. Prioritize ideas based on feasibility, user impact, and alignment with project goals.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Design"
-          >
-          <span>
-            1. Transform top ideas into high-fidelity designs.<br>
-            2. Create a seamless and user-friendly registration flow.<br>
-            3. Ensure consistency with the company’s visual identity.
-          </span>
-          </app-expandable-section>
-          <app-expandable-section title="Deliver"
-                                  [showBottomLine]="false"
-          >
-          <span>
-            1. Prepare comprehensive design documentation and resources.<br>
-            2. Ensure smooth handover and efficient implementation of the new registration flow.
-          </span>
+            <span [innerHTML]="item.content"></span>
           </app-expandable-section>
         </div>
 
