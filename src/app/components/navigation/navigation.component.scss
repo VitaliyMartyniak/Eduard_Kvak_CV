@@ -20,14 +20,14 @@
         font-weight: 700;
         margin-right: 48px;
         color: #D57A66;
-        border-bottom: 2px solid transparent;
+        position: relative;
 
         &.active {
           color: #F7EDE2;
-        }
 
-        &:not(.active):hover {
-          border-bottom: 2px solid #D57A66;
+          &:after {
+            height: 0;
+          }
         }
       }
     }
