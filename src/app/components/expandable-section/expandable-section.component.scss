@@ -36,16 +36,10 @@
 
   .section-content {
     margin: 0;
-    display: none;
+    overflow: hidden;
 
     p {
       margin: 0;
-    }
-  }
-
-  &.expanded {
-    .section-content {
-      display: block;
     }
   }
 }

@@ -4,17 +4,19 @@ import {ExpandableSectionComponent} from "../../../../components/expandable-sect
 import {RouterLink} from "@angular/router";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
+import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
 
 @Component({
   selector: 'app-alif-bee-kids-project',
   standalone: true,
-    imports: [
-        ExpandableSectionComponent,
-        NgForOf,
-        RouterLink,
-        SimpleCardsComponent,
-        SingleProjectFooterComponent
-    ],
+  imports: [
+    ExpandableSectionComponent,
+    NgForOf,
+    RouterLink,
+    SimpleCardsComponent,
+    SingleProjectFooterComponent,
+    SingleProjectHeaderComponent
+  ],
   templateUrl: './alif-bee-kids-project.component.html',
   styleUrl: './alif-bee-kids-project.component.scss'
 })
@@ -73,13 +75,6 @@ export class AlifBeeKidsProjectComponent {
       id: 4,
     },
   ]
-
-  constructor(private location: Location) {
-  }
-
-  goBack() {
-    this.location.back()
-  }
 
   toggleSection(id: number) {
     this.workingProcessList.forEach(item => {

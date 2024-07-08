@@ -4,17 +4,19 @@ import {Location, NgForOf} from "@angular/common";
 import {ExpandableSectionComponent} from "../../../../components/expandable-section/expandable-section.component";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
+import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
 
 @Component({
   selector: 'app-car-iq-pay-project',
   standalone: true,
-  imports: [
-    RouterLink,
-    NgForOf,
-    ExpandableSectionComponent,
-    SimpleCardsComponent,
-    SingleProjectFooterComponent
-  ],
+    imports: [
+        RouterLink,
+        NgForOf,
+        ExpandableSectionComponent,
+        SimpleCardsComponent,
+        SingleProjectFooterComponent,
+        SingleProjectHeaderComponent
+    ],
   templateUrl: './car-iq-pay-project.component.html',
   styleUrl: './car-iq-pay-project.component.scss'
 })
@@ -93,13 +95,6 @@ export class CarIqPayProjectComponent {
       id: 5,
     },
   ]
-
-  constructor(private location: Location) {
-  }
-
-  goBack() {
-    this.location.back()
-  }
 
   toggleSection(id: number) {
     this.workingProcessList.forEach(item => {

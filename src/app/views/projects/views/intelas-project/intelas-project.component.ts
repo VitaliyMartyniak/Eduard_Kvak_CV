@@ -4,6 +4,7 @@ import {ExpandableSectionComponent} from "../../../../components/expandable-sect
 import {RouterLink} from "@angular/router";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
+import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
 
 @Component({
   selector: 'app-intelas-project',
@@ -13,7 +14,8 @@ import {SingleProjectFooterComponent} from "../../components/single-project-foot
         NgForOf,
         RouterLink,
         SimpleCardsComponent,
-        SingleProjectFooterComponent
+        SingleProjectFooterComponent,
+        SingleProjectHeaderComponent
     ],
   templateUrl: './intelas-project.component.html',
   styleUrl: './intelas-project.component.scss'
@@ -75,13 +77,6 @@ export class IntelasProjectComponent {
       id: 4,
     },
   ]
-
-  constructor(private location: Location) {
-  }
-
-  goBack() {
-    this.location.back()
-  }
 
   toggleSection(id: number) {
     this.workingProcessList.forEach(item => {

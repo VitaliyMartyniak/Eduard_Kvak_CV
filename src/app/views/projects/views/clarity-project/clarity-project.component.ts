@@ -4,17 +4,19 @@ import {ExpandableSectionComponent} from "../../../../components/expandable-sect
 import {RouterLink} from "@angular/router";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
+import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
 
 @Component({
   selector: 'app-clarity-project',
   standalone: true,
-    imports: [
-        ExpandableSectionComponent,
-        NgForOf,
-        RouterLink,
-        SimpleCardsComponent,
-        SingleProjectFooterComponent
-    ],
+  imports: [
+    ExpandableSectionComponent,
+    NgForOf,
+    RouterLink,
+    SimpleCardsComponent,
+    SingleProjectFooterComponent,
+    SingleProjectHeaderComponent
+  ],
   templateUrl: './clarity-project.component.html',
   styleUrl: './clarity-project.component.scss'
 })
@@ -91,13 +93,6 @@ export class ClarityProjectComponent {
       id: 5,
     },
   ]
-
-  constructor(private location: Location) {
-  }
-
-  goBack() {
-    this.location.back()
-  }
 
   toggleSection(id: number) {
     this.workingProcessList.forEach(item => {
