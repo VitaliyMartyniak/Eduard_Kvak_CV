@@ -12,8 +12,8 @@
     margin-bottom: 24px;
 
     .icon {
-      width: 35px;
-      height: 35px;
+      width: 40px;
+      height: 40px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
@@ -27,7 +27,6 @@
       }
 
       &.trophy {
-        height: 28px;
         background-image: url("/assets/images/trophy.svg");
       }
 

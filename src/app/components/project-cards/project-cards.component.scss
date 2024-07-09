@@ -79,7 +79,7 @@
       }
 
       span.link {
-        display: inline-block;
+        display: flex;
         margin-top: 32px;
         font-size: 20px;
         font-weight: 700;
@@ -88,8 +88,8 @@
 
         .view-project-icon {
           display: inline-block;
-          width: 16px;
-          height: 16px;
+          width: 32px;
+          height: 32px;
           background: url("/assets/images/view-project-arrow.svg") center no-repeat;
           background-size: contain;
           margin-left: 8px;
