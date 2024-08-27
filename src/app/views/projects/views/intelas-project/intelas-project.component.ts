@@ -5,18 +5,20 @@ import {RouterLink} from "@angular/router";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
 import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
+import { ScrollMonitorDirective } from "../../../../directives/scroll-monitor.directive";
 
 @Component({
   selector: 'app-intelas-project',
   standalone: true,
-    imports: [
-        ExpandableSectionComponent,
-        NgForOf,
-        RouterLink,
-        SimpleCardsComponent,
-        SingleProjectFooterComponent,
-        SingleProjectHeaderComponent
-    ],
+  imports: [
+    ExpandableSectionComponent,
+    NgForOf,
+    RouterLink,
+    SimpleCardsComponent,
+    SingleProjectFooterComponent,
+    SingleProjectHeaderComponent,
+    ScrollMonitorDirective
+  ],
   templateUrl: './intelas-project.component.html',
   styleUrl: './intelas-project.component.scss'
 })

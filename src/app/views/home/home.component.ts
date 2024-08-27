@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
 import {NgForOf} from "@angular/common";
 import {NavigationComponent} from "../../components/navigation/navigation.component";
 import {ProjectCardsComponent} from "../../components/project-cards/project-cards.component";
 import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
 import {SimpleCardsComponent} from "../../components/simple-cards/simple-cards.component";
+import { ScrollMonitorDirective } from "../../directives/scroll-monitor.directive";
 
 @Component({
   selector: 'app-home',
@@ -16,6 +17,7 @@ import {SimpleCardsComponent} from "../../components/simple-cards/simple-cards.c
     ProjectCardsComponent,
     FooterNavigationComponent,
     SimpleCardsComponent,
+    ScrollMonitorDirective
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

@@ -10,6 +10,7 @@ import {NavigationComponent} from "../../components/navigation/navigation.compon
 import {SimpleCardsComponent} from "../../components/simple-cards/simple-cards.component";
 import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
 import {NumberAnimationComponent} from "../../components/number-animation/number-animation.component";
+import { ScrollMonitorDirective } from "../../directives/scroll-monitor.directive";
 
 @Component({
   selector: 'app-about-me',
@@ -22,7 +23,8 @@ import {NumberAnimationComponent} from "../../components/number-animation/number
     NavigationComponent,
     SimpleCardsComponent,
     FooterNavigationComponent,
-    NumberAnimationComponent
+    NumberAnimationComponent,
+    ScrollMonitorDirective
   ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'

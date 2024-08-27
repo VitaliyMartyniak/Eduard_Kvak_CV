@@ -14,20 +14,13 @@ body {
   font-family: 'Outfit';
 }
 
-* {
+.fade-animation * {
   scale: .8;
   opacity: 0;
   animation: fade-in linear forwards;
   animation-timeline: view();
   animation-range: 0px 20vh;
 }
-
-.no-fade-animation, .no-fade-animation * {
-  animation: none;
-  scale: 1;
-  opacity: 1;
-}
-
 
 @keyframes fade-in {
   to {

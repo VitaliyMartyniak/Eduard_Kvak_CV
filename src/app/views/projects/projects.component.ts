@@ -5,6 +5,7 @@ import {Router, RouterLink} from "@angular/router";
 import {NavigationComponent} from "../../components/navigation/navigation.component";
 import {ProjectCardsComponent} from "../../components/project-cards/project-cards.component";
 import {FooterNavigationComponent} from "../../components/footer-navigation/footer-navigation.component";
+import { ScrollMonitorDirective } from "../../directives/scroll-monitor.directive";
 
 @Component({
   selector: 'app-projects',
@@ -16,7 +17,8 @@ import {FooterNavigationComponent} from "../../components/footer-navigation/foot
     NgStyle,
     NavigationComponent,
     ProjectCardsComponent,
-    FooterNavigationComponent
+    FooterNavigationComponent,
+    ScrollMonitorDirective
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'

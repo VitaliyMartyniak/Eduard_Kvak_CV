@@ -1,22 +1,24 @@
 import { Component } from '@angular/core';
 import {RouterLink} from "@angular/router";
-import {Location, NgForOf} from "@angular/common";
+import {NgForOf} from "@angular/common";
 import {ExpandableSectionComponent} from "../../../../components/expandable-section/expandable-section.component";
 import {SimpleCardsComponent} from "../../../../components/simple-cards/simple-cards.component";
 import {SingleProjectFooterComponent} from "../../components/single-project-footer/single-project-footer.component";
 import { SingleProjectHeaderComponent } from "../../components/single-project-header/single-project-header.component";
+import { ScrollMonitorDirective } from "../../../../directives/scroll-monitor.directive";
 
 @Component({
   selector: 'app-car-iq-pay-project',
   standalone: true,
-    imports: [
-        RouterLink,
-        NgForOf,
-        ExpandableSectionComponent,
-        SimpleCardsComponent,
-        SingleProjectFooterComponent,
-        SingleProjectHeaderComponent
-    ],
+  imports: [
+    RouterLink,
+    NgForOf,
+    ExpandableSectionComponent,
+    SimpleCardsComponent,
+    SingleProjectFooterComponent,
+    SingleProjectHeaderComponent,
+    ScrollMonitorDirective
+  ],
   templateUrl: './car-iq-pay-project.component.html',
   styleUrl: './car-iq-pay-project.component.scss'
 })
