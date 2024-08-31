@@ -6,9 +6,12 @@
         {{project.subtitle}}
       </span>
 
-      <div *ngFor="let details of project.details" class="details">
-        <p>{{details.title}}</p>
-        <span>{{details.data}}</span>
+      <div class="deliverables">
+        <p>Deliverables</p>
+        <div class="deliverable" *ngFor="let deliverable of project.deliverables">
+          <img src="assets/images/dot.svg" alt="dot">
+          <span>{{deliverable}}</span>
+        </div>
       </div>
 
       <span class="link"><span class="text">View Project</span><div class="view-project-icon"></div></span>

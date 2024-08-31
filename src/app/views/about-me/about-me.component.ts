@@ -205,16 +205,20 @@ export class AboutMeComponent {
           icon: 'mobile-app-design',
         },
         {
-          name: 'Embedded systems',
-          icon: 'embedded-systems',
-        },
-        {
           name: 'White label',
           icon: 'design-system',
         },
         {
           name: 'Apple CarPlay/Android Auto/AAOS',
           icon: 'car',
+        },
+        {
+          name: 'Integrations',
+          icon: 'integrations',
+        },
+        {
+          name: 'Embedded systems',
+          icon: 'embedded-systems',
         },
         {
           name: 'Design system/Design documentation',
@@ -256,19 +260,17 @@ export class AboutMeComponent {
   experienceList = [
     {
       name: 'Car IQ Inc.',
-      description: 'Car IQ Pay is the first payment platform to enable vehicles to initiate, validate, and complete' +
-        'authorized transactions. The system eliminates the need for credit cards by connecting vehicles directly to' +
-        'merchants for secure, seamless payments.',
-      period: 'Oct 2022 - Present',
+      description: 'Car IQ Pay is the first payment platform to enable vehicles to initiate, validate, and complete authorized ' +
+        'transactions. The system eliminates the need for credit cards by connecting vehicles directly to merchants for secure, seamless payments.',
+      period: 'Oct 2022 - Aug 2024',
       position: 'Senior-lead product designer',
-      companyType: 'Product, B2B and B2C',
-      industries: ['Automotive', 'Financial services', 'FinTech', 'Fleet management', 'Payments'],
-      responsibilities: ['Leading the design team, creating and distributing tasks, reviewing design solutions.',
-        'Data analysis, including metrics & KPIs, creating and testing hypotheses, conducting user testing, interviews, A/B testing, audits, and more.',
-        'Close collaboration with developers, conducting design QA, tasks description.',
-        'Creating mobile/web applications, Apple CarPlay/Android Auto integrations, white-label solutions, and more.',
-        'Developing comprehensive design systems, documentation, and guidelines for the team.',
-        'Collaboration with other departments, participating in product growth, creating prototypes to attract new clients.'
+      companyType: 'Product',
+      responsibilities: ['Leading the design team, creating and distributing tasks, approving design solutions.',
+        'Data analysis, creating and testing hypotheses, conducting user testing/ interviews, A/B testing, and more.',
+        'Close collaboration with developers, conducting design QA, and task creation.',
+        'Creating product architecture and mockups (mobile/web applications), integrations, white labels, prototypes, and more.',
+        'Creating design systems, documentation, and guidelines.',
+        'Collaboration with other departments, defining product growth/monetization.'
       ]
     },
     {
@@ -278,7 +280,6 @@ export class AboutMeComponent {
       period: 'Jun 2021 - Oct 2022',
       position: 'Senior-lead product designer',
       companyType: 'Outsource, Outstaff',
-      industries: ['Business intelligence', 'E-commerce', 'Product design', 'UX design', 'Web design', 'Marketing'],
       responsibilities: ['Leading the design team, hiring new designers, and assisting with managing internal company structure.',
         'Leading the calls with clients and stakeholders.',
         'Data analysis, including metrics & KPIs, creating and testing hypotheses, conducting user testing, interviews, A/B testing, audits, and more.',
@@ -294,7 +295,6 @@ export class AboutMeComponent {
       period: 'May 2020 - Mar 2021',
       position: 'Product designer',
       companyType: 'Outsource',
-      industries: ['Creative agency', 'Product design', 'UX design', 'Web design'],
       responsibilities: ['Leading the calls with clients and stakeholders.',
         'Data analysis, creating and testing hypotheses, conducting competitor/user research, audits.',
         'Creating mobile/web applications, prototypes, design systems.',
@@ -308,7 +308,6 @@ export class AboutMeComponent {
       period: 'Sep 2019 - May 2020',
       position: 'UX/UI designer',
       companyType: 'Outsource, Outstaff',
-      industries: ['Mobile apps', 'Big data', 'ICT', 'Software', 'Information technology'],
       responsibilities: ['Participating in the calls with clients and stakeholders.',
         'Data analysis, creating and testing hypotheses, conducting competitor/user research, audits.',
         'Creating mobile/web applications, prototypes, design systems.',
@@ -323,7 +322,6 @@ export class AboutMeComponent {
       period: 'Oct 2018 - Aug 2019',
       position: 'UX/UI designer',
       companyType: 'Outsource',
-      industries: ['Creative agency', 'Mobile apps', 'Web design'],
       responsibilities: ['Participating in the calls with clients and stakeholders.',
         'Conducting competitor/user research, audits.',
         'Creating mobile applications, landing/corporate websites.'

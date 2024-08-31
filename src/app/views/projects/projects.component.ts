@@ -30,79 +30,58 @@ export class ProjectsComponent {
 
   projects = [
     {
+      name: 'factually-health',
+      title: 'Factually Health',
+      subtitle: 'An AI-powered platform that provides accurate, comprehensive information on any health topic, combating misinformation and improving patient engagement.',
+      deliverables: [
+        'Web app (responsive)',
+        'Guidelines for developers',
+        'Design system',
+        'Prototype'
+      ]
+    },
+    {
       name: 'car-iq-pay',
       title: 'Car IQ Pay',
       subtitle: 'The first payment platform to enable vehicles to initiate, validate, and complete authorized transactions.',
-      details: [
-        {
-          title: 'Role',
-          data: 'Lead product designer',
-        },
-        {
-          title: 'Team',
-          data: '2 designers, 2 product managers, 2 front-end developers',
-        },
-        {
-          title: 'Deliverables',
-          data: 'Mobile app (iOS & Android), Web app (responsive), Design system & documentation, and more',
-        }
+      deliverables: [
+        'Mobile app (iOS & Android)',
+        'Integrations (Apple & Google Pay, White-labels, and more)',
+        'Web app (responsive)',
+        'Design system & Documentation',
+        'Guidelines for designers',
+        'Prototypes, Email template, Invoice template, and more'
       ]
     },
     {
       name: 'clarity',
       title: 'Clarity',
       subtitle: 'Advanced solutions for seamless content sharing and engaging interactive reading.',
-      details: [
-        {
-          title: 'Role',
-          data: 'Lead product designer',
-        },
-        {
-          title: 'Team',
-          data: '1 designer, 1 project manager',
-        },
-        {
-          title: 'Deliverables',
-          data: 'Q&A platform, e-Book reader (responsive)',
-        }
+      deliverables: [
+        'Q&A platform',
+        'e-Book reader (responsive)',
+        'Marketing website',
+        'Design system',
       ]
     },
     {
       name: 'intelas',
       title: 'Intelas',
       subtitle: 'A leading platform in financial data standardization, aimed at real estate asset managers and accountants.',
-      details: [
-        {
-          title: 'Role',
-          data: 'Lead product designer',
-        },
-        {
-          title: 'Team',
-          data: '1 designer, 1 business analytic',
-        },
-        {
-          title: 'Deliverables',
-          data: 'Web app',
-        }
+      deliverables: [
+        'Web app',
+        'Report builder',
+        'Design system',
+        'Prototype',
       ]
     },
     {
-      name: 'alifBee-kids',
-      title: 'AlifBee Kids',
-      subtitle: 'A comprehensive mobile app that helps children learn the Arabic language through an engaging and gamified experience.',
-      details: [
-        {
-          title: 'Role',
-          data: 'Lead product designer',
-        },
-        {
-          title: 'Team',
-          data: '1 designer',
-        },
-        {
-          title: 'Deliverables',
-          data: 'Mobile app (iOS & Android)',
-        }
+      name: 'formobile',
+      title: 'FORMobile',
+      subtitle: 'An innovative solution empowering citizens to easily report and track government-related issues.',
+      deliverables: [
+        'Mobile app (iOS & Android)',
+        'Design system',
       ]
     },
   ]
